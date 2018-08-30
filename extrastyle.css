@@ -1,0 +1,218 @@
+/*
+font-family: 'Audiowide', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(50, 50, 50, 1);
+    font-family: sans-serif;
+}
+
+.wraper {
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.wraper > * {
+    position: absolute;
+}
+
+.eight {
+    top: 0;
+    left: 0;
+    width: 66.667vw;
+    height: 100vh;
+    background-color: rgba(230, 25, 75, 1);
+    border-radius: 50% 0 0 50%;
+}
+
+.seven {
+    top: 0;
+    right: 0;
+    width: 33.333vw;
+    height: 66.667vh;
+    background-color: rgba(245, 130, 48, 1);
+    border-radius: 0 50% 0 0;
+}
+
+.six {
+    top: 66.667vh;
+    right: 0;
+    width: 22.222vw;
+    height: 33.333vh;
+    background-color: rgba(255, 225, 25, 1);
+    border-radius: 0 0 50% 0;
+}
+
+.five {
+    top: 77.778vh;
+    right: 22.222vw;
+    width: 11.111vw;
+    height: 22.222vh;
+    background-color: rgba(210, 245, 60, 1);
+    border-radius: 0 0 0 50%;
+}
+
+.four {
+    top: 66.667vh;
+    left: 66.667vw;
+    width: 7.407vw;
+    height: 11.111vh;
+    background-color: rgba(65, 190, 85, 1);
+    border-radius: 50% 0 0 0;
+}
+
+.three {
+    top: 66.667vh;
+    right: 22.222vw;
+    width: 3.704vw;
+    height: 7.407vh;
+    background-color: rgba(60, 220, 220, 1);
+    border-radius: 0 50% 0 0;
+}
+
+.two {
+    top: 74.074vh;
+    right: 22.222vw;
+    width: 2.469vw;
+    height: 3.704vh;
+    background-color: rgba(0, 130, 200, 1);
+    border-radius: 0 0 50% 0;
+}
+
+.one {
+    top: 75.309vh;
+    right: 24.691vw;
+    width: 1.235vw;
+    height: 2.469vh;
+    background-color: rgba(145, 30, 180, 1);
+    border-radius: 0 0 0 50%;
+}
+
+.zero {
+    top: 74.074vh;
+    right: 24.691vw;
+    width: 1.235vw;
+    height: 1.235vh;
+    background-color: rgba(225, 40, 215, 1);
+    border-radius: 0 50% 0 0;
+}
+
+
+.underground {
+    z-index: -1
+}
+
+
+.un8 {
+    top: 0;
+    left: 0;
+    width: 66.667vw;
+    height: 100vh;
+    background-color: rgba(50, 50, 50, 1);
+
+}
+
+.un7 {
+    top: 0;
+    right: 0;
+    width: 33.333vw;
+    height: 66.667vh;
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.un6 {
+    top: 66.667vh;
+    right: 0;
+    width: 22.222vw;
+    height: 33.333vh;
+    background-color: rgba(50, 50, 50, 1);
+}
+
+.un5 {
+    top: 77.778vh;
+    right: 22.222vw;
+    width: 11.111vw;
+    height: 22.222vh;
+    background-color: rgba(230, 25, 75, 1);
+}
+
+.un4 {
+    top: 66.667vh;
+    left: 66.667vw;
+    width: 7.407vw;
+    height: 11.111vh;
+    background-color: rgba(245, 130, 48, 1);
+}
+
+.un3 {
+    top: 66.667vh;
+    right: 22.222vw;
+    width: 3.704vw;
+    height: 7.407vh;
+    background-color: rgba(255, 225, 25, 1);
+}
+
+.un2 {
+    top: 74.074vh;
+    right: 22.222vw;
+    width: 2.469vw;
+    height: 3.704vh;
+    background-color: rgba(210, 245, 60, 1);
+}
+
+.un1 {
+    top: 75.309vh;
+    right: 24.691vw;
+    width: 1.235vw;
+    height: 3.704vh;
+    background-color: rgba(65, 190, 85, 1);
+}
+
+.un0 {
+    top: 74.074vh;
+    right: 24.691vw;
+    width: 1.235vw;
+    height: 0.618vh;
+    background-color: rgba(0, 130, 200, 1);
+}
+
+.cover {
+    top: 5vh;
+    left: 5vw;
+    width: 92.5vw;
+    height: 90vh;
+    z-index: 10;
+    background-color: rgba(127, 255, 0, .6);
+    transition: 3s;
+}
+
+.cover h1 {
+    position: absolute;
+    bottom: 55vh;
+    right: 2.9vw;
+    font-size: 12vmin;
+    font-family: 'Audiowide';
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(50, 50, 50, .8);
+    transition: .5s;
+}
+
+.cover:hover {
+    background-color: rgba(0, 0, 0, 0);
+    opacity: .3;
+    border-radius: 50%;
+    cursor: grab
+}
+
+.cover h1:hover {
+    opacity: 0;
+    cursor: pointer;
+}
