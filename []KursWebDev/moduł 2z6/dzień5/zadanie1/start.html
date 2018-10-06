@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>psudoklasa:hover c.d.</title>
+
+    <style>
+        :root {
+            --fz: 80px;
+        }
+
+        button {
+            font-size: 40px;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: arial;
+            font-size: 80px;
+        }
+
+        .big {
+            font-size: 160px;
+        }
+
+        .small {
+            font-size: 40px;
+        }
+
+        .brd {
+            border: 2px dashed goldenrod;
+        }
+
+        .shopCart {
+            cursor: pointer;
+            text-align: center;
+            border: 2px solid black;
+            height: 60px;
+            overflow: hidden;
+        }
+
+        .shopCart span {
+            display: inline-block;
+            font-size: 40px;
+            padding: 10px 30px;
+            border-radius: 3px;
+            line-height: 200%;
+            text-transform: uppercase;
+            transform: translateY(-12%);
+            transition: .3s
+        }
+
+        .shopCart:hover span {
+            transform: translateY(-56%)
+        }
+
+
+
+        /* 
+        .larger:hover~h1 {
+            font-size: 160px;
+        }
+
+        .smaller:hover~h1 {
+            font-size: 40px;
+        }
+
+        .border:hover~h1 {
+            border: 1px solid black;  
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <button class="larger">2xWiększy</button>
+    <button class="smaller">2xMniejszy</button>
+    <button class="border">Obramowanie</button>
+    <h1>Nazwa</h1>
+
+    <button class="shopCart"><span>Kup teraz<br>Super okazja</span></button>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        $('.larger').click(function () {
+            $('h1').toggleClass("big");
+        })
+
+        $('.smaller').click(function () {
+            $('h1').toggleClass("small");
+        })
+
+        $('.border').click(function () {
+            $('h1').toggleClass('brd');
+        })
+    </script>
+
+</body>
+
+</html>

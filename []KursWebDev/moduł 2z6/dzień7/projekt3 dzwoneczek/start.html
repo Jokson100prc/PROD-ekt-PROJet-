@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ringW: 100px;
+            --ringH: 100px;
+            --ringBorder: 6px solid var(--ringColor);
+            --bRadius: 50%;
+            --ringColor: #009da4;
+            --bellColor: #d77b00;
+            --bellFontSize: 60px;
+        }
+
+        .ring {
+            position: fixed;
+            bottom: 7vh;
+            right: 7vh;
+            width: var(--ringW);
+            height: var(--ringH);
+            border: var(--ringBorder);
+            border-radius: var(--bRadius);
+            text-align: center;
+            line-height: calc(var(--ringH) * 0.8);
+            transition: .3s;
+        }
+
+        .fa-bell {
+            font-size: var(--bellFontSize);
+            color: var(--ringColor);
+            animation: rings .5s linear infinite alternate;
+            transform-origin: 50% 0;
+            transition: .3s;
+        }
+
+        .ring:hover {
+            background-color: var(--ringColor);
+        }
+
+        .ring:hover .fas {
+            color: var(--bellColor);
+            animation-duration: .175s;
+        }
+
+        @keyframes rings {
+            0% {
+                transform: rotate(30deg);
+            }
+
+            100% {
+                transform: rotate(-30deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="ring">
+        <i class="fas fa-bell"></i>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkboxes and transform</title>
+
+    <style>
+        :root {
+            --size: 150px;
+        }
+
+        label {
+            font-size: 40px;
+            color: chartreuse;
+        }
+
+        input {
+            width: 40px;
+            height: 60px;
+            margin: 50px;
+        }
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: var(--size);
+            height: var(--size);
+            border: 5px solid black;
+            transition: .2s;
+        }
+
+        #size:checked~div {
+            width: calc(var(--size) *2);
+            height: calc(var(--size) *2);
+        }
+
+        #rotate:checked~div {
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        #color:checked~div {
+            background-color: black;
+        }
+
+        #glow:checked~div {
+            box-shadow: 0 0 30px 10px goldenrod;
+        }
+
+        #size:checked~#color:checked~label {
+            color: rgb(162, 162, 230);
+        }
+
+        #size:checked~#glow:checked~div {
+            box-shadow: 0 0 96px 12px red;
+        }
+
+        #rotate:checked~#color:hover~div {
+            color: aqua;
+            font-size: 60px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <label for="size">Powieksz x 2</label>
+    <input type="checkbox" id="size">
+
+    <label for="rotate">Obróć</label>
+    <input type="checkbox" id="rotate">
+
+    <label for="color">Zmień kolor</label>
+    <input type="checkbox" id="color">
+
+    <label for="glow">Podświetl</label>
+    <input type="checkbox" id="glow">
+
+
+    <div>BADAGAJA</div>
+
+</body>
+
+</html>

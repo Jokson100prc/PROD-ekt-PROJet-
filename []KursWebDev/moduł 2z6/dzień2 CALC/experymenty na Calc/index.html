@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Poland: calc(100vh - 300px);</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        clearfix {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        header {
+            height: 300px;
+            background-color: white;
+        }
+
+        div {
+            background-color: red;
+            background-image: url(Orzeł_Biały_Herb_Polski.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            height: 50px;
+            margin: 10px;
+            width: calc(100%/5 - 20px);
+            float: left;
+        }
+
+        footer {
+            height: calc(100vh - 300px);
+            background-color: red;
+        }
+
+        section {
+            background-color: darkorange;
+            float: left;
+            width: calc(100%/3);
+            height: calc(100vh/3);
+        }
+
+        section+section {
+            background-color: green;
+        }
+
+        section+section+section {
+            background-color: darkviolet;
+        }
+
+        section+section+section+section {
+            background-color: darkviolet;
+        }
+
+        section+section+section+section+section {
+            background-color: darkorange;
+        }
+
+        section+section+section+section+section+section {
+            background-color: green;
+        }
+
+        section+section+section+section+section+section+section {
+            background-color: green;
+        }
+
+        section+section+section+section+section+section+section+section {
+            background-color: darkviolet;
+        }
+
+        section+section+section+section+section+section+section+section+section {
+            background-color: darkorange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <aside>
+        <header>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </header>
+        <footer></footer>
+
+        <article class="clearfix">
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+            <section></section>
+        </article>
+
+</body>
+
+</html>

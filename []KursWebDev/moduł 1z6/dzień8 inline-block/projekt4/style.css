@@ -1,0 +1,116 @@
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 10px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* NAWIGACJA */
+
+nav {
+  font-size: 0;
+  text-align: right;
+  margin: 10px 0;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav a {
+  display: inline-block;
+  font-family: 'Oswald';
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #555;
+  padding: 7px;
+  margin: 0 16px;
+}
+
+#reservation {
+  padding: 7px;
+  border: 2px solid #555;
+  margin-right: 40px;
+  margin-left: 69px;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  border-bottom: 2px solid #555;
+  color: #000;
+}
+
+#reservation:hover {
+  background-color: royalblue;
+  color: #efefef;
+  border: 2px solid royalblue;
+  padding: 3px;
+}
+
+header {
+  height: 50vh;
+  background-image: url(auto2.jpg);
+  background-size: cover;
+}
+
+header h1 {
+  font-size: 7rem;
+  line-height: 50vh;
+  color: #e9e9e9;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 50%)
+}
+
+main {
+  max-width: 1024px;
+  margin: 4vh auto;
+  font-size: 0;
+}
+
+main p.description {
+  margin: 0 60px 20px 60px;
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+main div.feature {
+  display: inline-block;
+  width: 33.33%;
+}
+
+main div.image {
+  background-color: royalblue;
+  min-height: 150px;
+  margin: 20px;
+}
+
+main div.image:hover {
+  background-color: aqua;
+}
+
+main h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+}
+
+footer {
+  background-color: #222;
+}
+
+footer p {
+  color: #efefef;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 70px;
+}

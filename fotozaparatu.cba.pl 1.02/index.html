@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <title>Świat z mojego telefonu!</title>
+
+    <meta name="description" content="Na moim blogu dzielę się zdjęciami, które wykonałem w trakcie mniejszych i większych swoich podróży i przygód. Zapraszam do oglądania!">
+    <meta name="keywords" content="podróże, zdjęcia, Polska, Ukraina, Anglia, Chorwacja, Czechy, Cabo Verde">
+    <meta name="author" content="Marcin Zawacki Jokson100%">
+
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+
+    <!--  I use jQuery to get a scroll efect, when you click a link  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script>
+
+    <script>
+        jQuery(function($) {
+
+            $.scrollTo(0);
+
+            $('#link1').click(function() {
+                $.scrollTo($('#pl'), 1500);
+            });
+            $('#link2').click(function() {
+                $.scrollTo($('#ua'), 1500);
+            });
+            $('#link3').click(function() {
+                $.scrollTo($('#cv'), 1500);
+            });
+            $('#link4').click(function() {
+                $.scrollTo($('#en'), 1500);
+            });
+            $('#link5').click(function() {
+                $.scrollTo($('#cz'), 1500);
+            });
+            $('#link6').click(function() {
+                $.scrollTo($('#cr'), 1500);
+            });
+            $('#link7').click(function() {
+                $.scrollTo($('#logo'), 1500);
+            });
+
+        });
+    </script>
+
+
+</head>
+
+<body onload="zmienslajd()">
+
+    <div id="wrrapper">
+
+        <main>
+
+            <header>
+
+                <div class="header">
+
+                    <div id="logo">
+                        <img src="swiat.png" style="float: left;" />
+                        <span style="color: #c34f4f">FOTOświata</span>.ztelefonu
+                        <div style="clear:both;"></div>
+                    </div>
+
+                </div>
+
+
+                <div id="nav">
+
+                    <nav>
+                        <ol>
+
+                            <li><a id="link7" href="#logo">Strona główna</a></li>
+
+                            <li><a id="link1" href="#pl">Polska</a>
+                                <ul>
+                                    <li><a href="poland.html"><img src="img/Polska.png"></a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="link2" href="#ua">Ukraina</a>
+                                <ul>
+                                    <li><a href="ukraine.html"><img src="img/Ukraina.png"></a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="link3" href="#cv">CaboVerde</a>
+                                <ul>
+                                    <li><a href="caboverde.html"><img src="img/CaboVerde.png"></a></li>
+                                </ul>
+                            </li>
+
+                            <li><a id="link4" href="#en">Anglia</a>
+                                <ul>
+                                    <li><a href="england.html"><img src="img/Anglia.png"></a></li>
+                                </ul>
+                            </li>
+
+
+                            <li><a id="link5" href="#cz">Czechy</a>
+                                <ul>
+                                    <li><a href="czech.html"><img src="img/Czechy.png"></a></li>
+                                </ul>
+                            </li>
+                            <li><a id="link6" href="#cr">Chorwacja</a>
+                                <ul>
+                                    <li><a href="croatia.html"><img src="img/Chorwacja.png"></a></li>
+                                </ul>
+                            </li>
+
+                        </ol>
+                    </nav>
+
+                </div>
+            </header>
+
+            <div id="content">
+
+                <article>
+                    <section>
+                        <div id="pl" style="width:100%;height:55px;"></div>
+                        <div class="country">
+                            <h1>Nasza Ojczyzna - cudze chwalicie swego nie znacie</h1>
+                            <p>Lubię czasem wyskoczyć spontanicznie na wypad w góry, czy ognisko za miastem... Nigdy Aparatu nie zabierałem ze sobą, ale przecież prawie każdy z nas ma smartfona. Ja też, stary, koreański, ale jest prawie zawsze ze mną :) i prawie zawsze coś mnie skusi żeby to sfotografować. mam już na prawdę dużą kolekcje, która nie nadaje się do publikacji, ale tu wrzuciłem kilka próbek żeby podzielić się swoją pasją podróżnika!
+                                <br>Czy wiesz że... na Dolnym Śląsku jest ponad 1200 dawnych pałacy i zamków? wiele z nich jest w ruinie, ale wiele też się zachowało bądź są odbudowywane. Takich ciekawostek nasza ojczyzna ma sporo, a pięknych miejsc znacznie więcej. Mamy góry, morze, dzikie rzeki, jeziora, wspaniałe lasy... a nawet wydmy i wiele więcej. A ty? Ile z tych miejsc widziałeś/aś?</p>
+                        </div>
+
+                        <div class="countryimg">
+
+                            <a href="poland.html"><img src="img/plmountain.jpg" /></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="ua" style="width:100%;height:50px;"></div>
+                        <div class="country">
+                            <h1>Ukraina piękny kraj, ludzie jak my</h1>
+                            <p>Ukraina to kraj kontrastów, dobrych ludzi, naturalnej kuchni, dziurawych dróg i pięknych kobiet<br>We Lwowie, łatwo dogadać się po polsku, a warto go odwiedzić bo ceny są przystępne, za to atrakcje lokalnych lokali są zaskakujące i ciekawe. Jest wiele miejsc turystycznych, ogromna starówka i kilka punktów widokowych. A do tego w samym centrum jest świetnie zorganizowana informacja turystyczna, gdzie dowiemy się wszystkiego o mieście i jego atrakcjach i to w kilku językach.
+                                <br>Odessa... kiedyś tam wrócę w lecie, na wiosnę raczej nie zrobiła na mnie dobrego wrażenia, ale spotkałem tam dobrych ludzi i miałem okazje zapuścić się w miejsca które turyści najczęściej wolą pominąć. Natomiast za co w ogóle można pochwalić Ukrainę, to pyszna kawa, czekolada i Sabo - ukraiński wyśmienity koniak, który ponoć jest produkowany gdzieś niedaleko Odessy właśnie<br>Kijów, stolica Ukrainy, do dziś nosi ślady zamieszek na Majdanie. ogromne miasto, niektórzy mówią że może tam żyć ponad 3 i pół miliona ludzi. Polecam wdrapać się na wieże przy Katedrze św. Sofii i zobaczyć to miasto z wysokości kilkudziesięciu metrów, a także wybrać się na wycieczkę po stacjach metra, które były drążone na nieprawdopodobnych głębokościach - stacja Arsenał jest najgłębiej wybudowaną budowlą tego typu na świecie. Tam widziałem najdłuższe schody ruchome w swoim życiu ;)<br>Na koniec wycieczki wróciłem do Łucka. Choć widać brak funduszy na modernizację, to miasto jest uznane za jedno z najczystszych w Ukrainie, podobnie Lwów zresztą... a zupełnie odwrotnie Odessa... Wokół miasta płynie przepiękna dzika rzeka Styr, opływa miasto z trzech stron, i być może to dlatego właśnie w Łucku zachował się jeden z nielicznych zamków, a może nawet jedyny na tych ziemiach, który z resztą figuruje na jednym z ukraińskich banknotów.<br>Ukraina to też miejsce które kojarzy mi się ze sztuką uliczną. Mnóstwo artystów przedstawiających swoje okazałe prace, na ulicach, murach miast, mnóstwo grajków ulicznych</p>
+                        </div>
+                        <div class="countryimg">
+                            <a href="ukraine.html"><img src="img/uacontrasts.jpg" /></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="cv" style="width:100%;height:50px;"></div>
+                        <div class="country">
+                            <h1>Wyspy Zielonego Przylądka - lato nawet w zime</h1>
+                            <p>Cesaria Evora, to jedna z najbardziej znanych artystek pochodzących z Cabo Verde czyli Wysp Zielonego Przylądka. Chyba w każdej większej osadzie - oni to nazywają miastami ;) znajdziemy jaj portrety na ścianach, budynków lub wewnątrz barów, sklepów i innych lokali. Caboverdyjczycy to ludzie bardzo utalentowani artystycznie, a zwłaszcza muzycznie. Nie trzeba być długo tam żeby to zaobserwować. Trzy takie moje zapamiętane muzyczne momenty, to występ grupy 3 muzyków, wokalistą z gitarą, wokalistka i niewidomy perkusista, próby w szkole muzycznej w Mindelo... oni mogli by to od razu nagrać na płytę... oszałamiające. I ślub w kościele w Praia. Niewiarygodne jak oni pięknie śpiewają i pozytywnie intonują!<br>Cabo Verde zyskuje coraz większą popularność turystyczną, jest to 10 zamieszkałych wysp i kilka malutkich, bezludnych. Choć ten kraj leży na środku oceanu, to krajobraz jest pustynny do półpustynnego. szczególnie to widać było podczas mojego pobytu, kiedy to nie padało w wielu miejscach od 8 miesięcy dłużej. Natomiast są to dość zróżnicowane wyspy, od płaskich takich jak skąpana w słońcu Sal, gdzie królują piaszczyste plaże i kajtserferzy. Przez Santo Antao, która jest górzystą i najbardziej zieloną wyspą z wszystkich. Po Fogo, wyspę wulkan, na której niestety nie byłem, która ma 2829m - jest to praktycznie jeden wielki stożek, który wyrasta z głębokości ponad 5000m pod poziomem morza!</p>
+                        </div>
+                        <div class="countryimg">
+                            <a href="caboverde.html"><img src="img/cvsesaria.jpg" /></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="en" style="width:100%;height:50px;"></div>
+                        <div class="country">
+                            <h1>Anglia - nie tylko do pracy</h1>
+                            <p>Anglia... Kraina deszczu, pięknych terenów zielonych, uroczych miasteczek, grzecznych, raczej wyluzowanych ludzi. Tak, sposób w jaki porozumiewają się Anglicy jest na prawdę grzeczny i przyjazny. Np kiedy podejdziesz do półki w sklepie a ktoś będzie Ci ją zasłaniać, to NA PEWNO ta osoba pierwsza Cię przeprosi i udostępni miejsca! Było to dla mnie bardzo pozytywnym zaskoczeniem, wręcz szokiem.<br> Niej jest to Ciepły kraj, choć i tak mieszkałem w jednym z cieplejszych i suchszych regionów, to w lecie temperatura przekroczyła 26̊C tylko przez kilka dni, nawet nie tydzień! A kiedy spadło 5 cm śniegu byli naprawdę zaskoczeni. Ponoć w Hereford, gdzie mieszkałem 6 miesięcy, śnieg ostatnio był kilka a może nawet kilkanaście lat temu. Jednak dzięki tej pogodzie, ogrody, parki i dzika natura, na prawdę zachwycają swoim urokiem. Może i Ty chciałbyś przejść przez te tęczowe wrota? </p>
+                        </div>
+                        <div class="countryimg">
+                            <a href="england.html"><img src="img/engrainbow.jpg" /></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="cz" style="width:100%;height:50px;"></div>
+                        <div class="country">
+                            <h1>Czeskie klimaty</h1>
+                            <p>Czesi to bardzo pozytywny naród. Oni rzadko kiedy się czymś przejmują. Są bardziej wyluzowani niż Anglicy! Lubią piwo i towarzystwo. Dbają o swoje miasta i nawet dobrze prosperują. To my dużo częściej jedziemy do Czech za pracą, a oni za chlebem wyjeżdżają ze swojego kraju na prawdę sporadycznie.
+                                <br>Także szlaki turystyczne i komunikacja między miejscowościami, nawet małymi, jest cały czas utrzymywana i nawet dobrze to funkcjonuje. A jest co zwiedzać. Góry po czeskiej stronie są tak samo piękne jak u nas. Lubię takie wycieczki kiedy przechodzę z Polski do Czech lub odwrotnie. A mam tam jeszcze dużo do zwiedzenia. Np. Czeska Szwajcaria, ponoć jedno z najpiękniejszych miejsc w całych Czechach. Jeszcze tam nie byłem, ale polecam np. Skalne Miasteczko, Trutnov i oczywiście Pragę! Stolica Czech imponuje architekturą, zabytkami i nieskończoną ilością ciekawych miejsc!
+                        </div>
+                        <div class="countryimg">
+                            <a href="czech.html"><img src="img/czprague.jpg" /></a>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div id="cr" style="width:100%;height:50px;"></div>
+                        <div class="country">
+                            <h1>Chorwackie wakacje</h1>
+                            <p>Do Chorwacji wybrałem się z dziewczyną na stopa, a dotarliśmy pociągiem :) To ze względu na ograniczony czas i problemy z uchodźcami na granicy węgierskiej. I stopa i pociąg przez 4 kraje - Słowacja, Austria, Słowenia i Chorwacja, wspominam jako bardzo fajną przygodę. Również krótki ale intensywny i pobyt w Chorwacji był bardzo udany. Międzynarodowym pociągiem za prawie 200euro - tego wolał bym nie pamiętać ;) - dojechaliśmy do Zagrzebia. Tam mieliśmy problem z noclegiem więc po całej nocy pod chmurką pojechaliśmy najwcześniejszym połączeniem do Rijeki. Pogoda była dla mnie wzorowa, ponad 28̊C ;), jakiś lekki deszczyk któregoś dnia... ahh...pięknie. Można było spać nad samym możem i nawet nad ranem było przyjemnie ciepło. Linia brzegowa Chorwacji jest bardzo skalista. Królują takie betonowe tarasy i plaże. Ale myślę że ilość turystów była w sam raz więc nie było problemu ze znalezieniem idealnej przestrzeni dla siebie. Kolor wody i jej przejrzystość była obłędna. Mnóstwo łódeczek spokojnie bujało się po tafli wody. A wieczorami w wielu miejscach można było usłyszeć muzykę na żywo. Chorwacje kojarzę jako genialne wakacje, a Chorwatów jako dobrych ludzi. Polecam. Ja na pewno się tam jeszcze wybiorę :) Piękny kraj!</p>
+                        </div>
+                        <div class="countryimg">
+                            <a href="croatia.html"><img src="img/crmarina.jpg" /></a>
+                        </div>
+                    </section>
+                </article>
+
+        </main>
+
+        <footer>Nie trać czasu! Zwiedzaj świat bo jest na wyciągnięcie ręki! &copy; Jokson100% marcinzacki@gmail.com</footer>
+
+        </div>
+
+        <script src="jquery-3.3.1.min.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                var NavY = $('#nav').offset().top;
+
+                var stickyNav = function() {
+                    var ScrollY = $(window).scrollTop();
+
+                    if (ScrollY > NavY) {
+                        $('#nav').addClass('sticky');
+                    } else {
+                        $('#nav').removeClass('sticky');
+                    }
+                };
+
+                stickyNav();
+
+                $(window).scroll(function() {
+                    stickyNav();
+                });
+            });
+        </script>
+
+
+</body>
+</html>

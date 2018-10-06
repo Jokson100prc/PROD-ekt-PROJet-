@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 50vh;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="s1 red"></div>
+    <div class="s2"></div>
+
+    <script>
+        let fD = document.querySelector('.s1');
+        let sD = document.querySelector('.s2');
+
+        function cC() {
+            // fD.classList.toggle('red')
+            // sD.classList.toggle('red')
+
+            this.classList.toggle('red')
+        }
+        // window.addEventListener('click', cC);
+        fD.addEventListener('click', cC);
+        sD.addEventListener('click', cC);
+    </script>
+
+</body>
+
+</html>

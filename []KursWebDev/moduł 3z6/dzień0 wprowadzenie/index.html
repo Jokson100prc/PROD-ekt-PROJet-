@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>wprowadzenie i nie tylo</title>
+</head>
+
+<body>
+
+    <button onclick=doClick()>Click Me!</button>
+    <button onclick='this.innerHTML="You Clicked Me!"'>Click Me please</button>
+    <button id="time" onclick=showDate()>I'll show U dete...</button>
+
+    <form method="post" action="init.php" name="aForm">
+        <label>Background</label>
+        <select name="background" id="background" onchange="changeBGC()">
+            <option value="graphite">Graphite</option>
+            <option value="black">Black</option>
+            <option value="green">Green</option>
+            <option value="coper">Orange</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+
+
+    <script>
+        console.log('ok')
+        typeof NaN;
+        typeof 'string'
+        typeof `gravis`
+
+
+        // Object constructor
+        const apple = new Object();
+        apple.color = 'red';
+        apple.shape = 'round';
+        apple.quantity = 3;
+
+        apple.values = function () {
+            return color, shape, quantity, "that's values"
+        }
+
+        console.log(apple.values);
+
+
+
+        // Constructor Pattern (Wzór)
+        function car(brand, model, type) {
+            this.brand = brand;
+            this.model = model;
+            this.type = type;
+
+            this.describe = function () {
+                return 'The ' + this.brand + ' has the ' + this.model + ' in ' + this.type + ' type';
+            }
+        }
+        const VW = new car('VW', 'passat', 'sedan');
+        console.log(VW.describe());
+
+        // construct Objects in Array
+        const platformUsers = [{
+                name: 'Czesiek Smith',
+                age: 98
+            },
+            {
+                name: 'Arlena Witkacy',
+                age: 33
+            },
+            {
+                name: 'Edi Fitsens',
+                age: 45
+            }
+        ];
+        platformUsers.Length = function () {
+            return platformUsers[0] + platformUsers[1] + platformUsers[2];
+        };
+        console.log(platformUsers.Length());
+
+        // EVENTS
+        function doClick() {
+            alert(' You clicked!');
+        }
+
+        function showDate() {
+            const time = document.getElementById('time');
+            time.innerHTML = Date();
+        };
+
+        function changeBGC(x) {
+            console.log(x);
+        }
+    </script>
+</body>
+
+</html>

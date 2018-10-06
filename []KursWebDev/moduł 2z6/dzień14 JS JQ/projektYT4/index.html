@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS case break</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #333333;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .info {
+            position: fixed;
+            top: 30px;
+            left: 30px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        .box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 24px;
+            height: 24px;
+            background-color: red;
+            transition: .051s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <span class="info"></span>
+    <div class="box"></div>
+
+    <script>
+        const info = document.querySelector('.info');
+        const box = document.querySelector('.box');
+
+        const move = (e) => {
+            console.log(e.keyCode)
+
+            info.textContent = 'Pozycja pozioma: ' + box.offsetLeft + "px , pozycja pionowa: " + box.offsetTop +
+                "px";
+
+
+            switch (e.keyCode) {
+                case 37:
+                    box.style.left = box.offsetLeft - 10 + "px";
+                    break;
+                case 38:
+                    box.style.top = box.offsetTop - 10 + "px";
+                    break;
+                case 39:
+                    box.style.left = box.offsetLeft + 10 + "px";
+                    break;
+                case 40:
+                    box.style.top = box.offsetTop + 10 + "px";
+                    break;
+                case 32:
+                    const red = Math.floor(Math.random() * 256)
+                    const green = Math.floor(Math.random() * 256)
+                    const blue = Math.floor(Math.random() * 256)
+                    box.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+                    info.textContent = 'kolorki...';
+                    break;
+                default:
+                    info.textContent = 'Zaraz to uruchomię';
+                    break;
+            }
+
+
+        }
+
+
+        document.addEventListener('keydown', move)
+    </script>
+
+</body>
+
+</html>

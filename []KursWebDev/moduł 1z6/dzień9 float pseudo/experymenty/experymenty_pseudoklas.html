@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>pseudoelementy pseudoklasy w akcji</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: #333;
+            color: #cd0;
+        }
+
+        /*
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: right;
+    }
+*/
+
+        .squareVH {
+            position: relative;
+            top: 500px;
+            right: 150px;
+            float: right;
+            background: #090;
+            width: 30vh;
+            height: 30vh;
+        }
+
+        .squareVW {
+            position: relative;
+            top: 500px;
+            right: 150px;
+            float: right;
+            background: #009;
+            width: 30vw;
+            height: 30vw;
+            z-index: -1;
+        }
+
+        p::selection {
+            background: pink;
+            color: chartreuse
+        }
+
+        p::first-letter {
+            font-size: 30px;
+        }
+
+        p::first-line {
+            background: #fff;
+        }
+
+        li:nth-child(3n+2) {
+            background: #050;
+            color: darkorange;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div href="#">TESTUJEMY</div>
+    <!--      HREF    tak nie zadziała   !!!!!      -->
+
+
+    <div class="clearfix">
+        <div class="squareVH"></div>
+        <div class="squareVW"></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae similique non saepe ullam ab, ipsa eum reiciendis minima porro alias eveniet architecto labore deserunt natus commodi dicta recusandae perferendis a laudantium expedita dolore accusamus quaerat. Nulla quo dicta omnis, quos culpa atque possimus corporis fugit laboriosam. Blanditiis doloribus quas, incidunt id excepturi vel! Architecto quas doloremque, tempora obcaecati, voluptates, numquam dicta quod, alias possimus minus laudantium ducimus maiores repudiandae quia rem excepturi iusto soluta harum nobis. Officiis quis aliquam veniam quas autem, pariatur provident recusandae ullam id aut rem architecto veritatis. Exercitationem aspernatur velit qui, inventore excepturi, nisi quo quod magnam, veritatis, vel minima alias et in placeat. Provident tenetur expedita reprehenderit incidunt pariatur at a aliquam, consequatur eaque eligendi nemo ad labore id ab! Dicta ex ad possimus, nemo rem, cumque quae aspernatur cupiditate perferendis alias aliquid veniam doloremque nihil quam modi sit tenetur reprehenderit corporis obcaecati iste at delectus molestiae sequi asperiores! Ipsa ea mollitia velit consectetur tempore et consequuntur illo ducimus maiores aliquam reprehenderit accusantium vitae quis veniam iste, magnam deleniti cupiditate, iusto nihil laboriosam est perspiciatis modi, quisquam ratione magni. Inventore modi obcaecati doloribus consectetur, mollitia iure unde, quidem voluptate, ipsum maxime corporis repellendus in vel excepturi, aspernatur laudantium libero dolorum quisquam reprehenderit laborum. Culpa distinctio, pariatur perspiciatis eum illum ipsum. Temporibus pariatur similique obcaecati vitae reprehenderit assumenda aut itaque deleniti voluptas. Atque cum consectetur laudantium repellat magni, doloribus officiis repudiandae explicabo laboriosam rerum temporibus debitis nobis autem maxime assumenda mollitia, veniam maiores sequi quos at. Dolor commodi, deleniti sunt suscipit totam cupiditate molestiae sequi porro, corporis culpa error? Quam ex quisquam consequuntur cupiditate ut nostrum illo delectus perspiciatis corporis velit, ipsum necessitatibus dolore mollitia harum, laboriosam culpa. Ducimus veritatis quos nobis laboriosam pariatur cupiditate at aliquid, sapiente vero vel eius provident non sit mollitia quod asperiores. Voluptatum, eveniet hic cumque nam. Similique non autem, nihil officia dolores repellat. Rerum officia laborum hic, doloribus omnis, soluta nesciunt unde iure corporis, accusantium repellat voluptatibus. Placeat, ipsa eligendi ab saepe ex facere, commodi, cumque atque porro neque accusamus magnam soluta iste illum. Tempora necessitatibus doloremque, voluptatem non beatae. Quis itaque maxime nisi a, aliquid sapiente magni maiores voluptatibus dicta nostrum neque sequi enim consequatur sint dolores expedita harum, cumque obcaecati at doloremque officiis et provident aliquam labore. Autem rem, doloribus nulla ullam, quam non mollitia cumque cupiditate delectus velit quae, laborum illo quisquam quibusdam officiis soluta! Iusto iure voluptatum, accusantium modi voluptatibus, laboriosam autem pariatur quae quia atque, sunt ratione dolorum quidem maxime explicabo, nam tempora id asperiores. Ea, ducimus, nobis? Debitis, quae, inventore. Voluptatem ipsam in dicta adipisci recusandae ab aliquam aspernatur reprehenderit dolorem harum, delectus quos soluta incidunt, sunt, possimus nulla debitis perspiciatis omnis voluptas enim. Cupiditate placeat, officiis harum! Error praesentium quae dolor deleniti quos, labore at ducimus vero. Ipsum totam nesciunt expedita neque, natus voluptatem quaerat! Reiciendis repellendus non, eos iusto libero error fuga tempore illum esse impedit necessitatibus id ex, nihil beatae eius eaque pariatur, sequi magni explicabo placeat quisquam accusamus! Magnam delectus expedita eligendi porro laborum. Omnis repellendus tenetur, obcaecati placeat at, quia amet nam repellat numquam ratione accusantium ipsum aperiam doloribus eligendi tempore, accusamus rerum animi? Aspernatur laboriosam saepe magnam, assumenda facere magni! Neque atque ea quisquam architecto blanditiis cum molestiae veritatis nulla maxime rem magni omnis, non nemo voluptatum nisi quis soluta? Vel illum numquam recusandae perspiciatis sit exercitationem, quae totam aspernatur mollitia omnis eligendi veniam animi quidem quos dolorum velit amet porro. Necessitatibus consectetur dolorum optio quod hic voluptatem vero, adipisci quia, natus explicabo eius eum pariatur similique veritatis in molestiae enim labore eos. Sapiente praesentium, amet velit aperiam corrupti neque in deleniti vero ut aut fugiat ipsa optio ipsum vel laboriosam tempore doloribus, tempora culpa voluptatibus ea unde, sit inventore eaque alias. Labore nulla consequatur nam consequuntur, veritatis mollitia, provident odio fugiat alias ut officiis maiores dignissimos molestiae. Laborum quis ducimus, quae enim maxime, ad delectus quidem a numquam maiores assumenda mollitia ex alias accusamus? Quam, praesentium, quae beatae ad aliquid atque illo, perferendis quasi provident porro quia, iste reiciendis. Harum modi nemo magni hic, cupiditate alias omnis numquam illo obcaecati expedita quae fugit! Eligendi quam molestiae reprehenderit provident veniam sunt odit magni praesentium repellendus, magnam! Quisquam cupiditate blanditiis dolore officiis odio sint tempora expedita perspiciatis quaerat deleniti est quibusdam et voluptatem possimus voluptas qui, pariatur at facere consequuntur hic, consequatur repudiandae ipsam. Consequatur, ea praesentium facilis soluta illo vitae earum dolorem doloremque ullam! Necessitatibus id totam autem, perspiciatis praesentium, fugit? Est, impedit blanditiis molestiae illo praesentium deserunt, aspernatur, voluptatum, perspiciatis eos corrupti explicabo nulla sint ex consequatur cum magnam laboriosam obcaecati. Harum, quasi, nulla. Exercitationem perferendis pariatur necessitatibus sint cupiditate facere ratione possimus ab fugit ex corporis saepe, ullam odio maiores veniam reiciendis tempore, tenetur perspiciatis incidunt nemo unde accusamus odit consectetur libero? Ullam expedita aspernatur tempore nostrum voluptatem doloremque necessitatibus cumque odio, assumenda amet, inventore ipsa illo adipisci asperiores dolore odit laborum aperiam. Placeat et rerum distinctio aperiam, commodi dicta neque eos quidem debitis vitae expedita iste voluptatum eligendi nam, non sapiente facilis itaque alias atque culpa possimus labore. Voluptates ducimus, magni perferendis minus id tempore dolorem quo quaerat molestias quam nihil enim sit vero laborum pariatur modi neque, veniam. Laborum harum velit ea adipisci, natus amet, tempore excepturi quidem iste ad ut consequuntur laudantium vero, facilis nam inventore dignissimos beatae atque mollitia incidunt voluptas recusandae! Doloremque voluptatibus rem fugit nihil iure id. Ab deleniti inventore ad nostrum nisi, voluptas cum minima placeat esse voluptate. Ea et corporis voluptatem omnis autem sint ad officia hic, recusandae minima, eos laborum voluptatibus pariatur, nobis expedita minus. Sunt, tempore aspernatur atque doloribus possimus architecto assumenda dicta enim libero illum perferendis nam eligendi iusto illo itaque eos eum labore non. Ipsam harum vitae provident excepturi recusandae magni pariatur sapiente. Aspernatur fugiat dolorum corporis, porro quasi odio, voluptatum, facilis soluta ut delectus quia ea qui ipsa eum necessitatibus voluptas quisquam. Perspiciatis dolor dolore impedit vero veritatis corporis quisquam. Fugit aliquam laboriosam dolorem nam temporibus harum voluptatibus. Laboriosam repudiandae deserunt, rem vero.</p>
+    <ul id="ddd">
+        <li><a href="">ffaf1</a></li>
+        <li><a href="">ffaf2</a></li>
+        <li><a href="">ffaf3</a></li>
+        <li><a href="">ffaf4</a></li>
+        <li><a href="">ffaf5</a></li>
+        <li><a href="">ffaf6</a></li>
+        <li><a href="">ffaf7</a></li>
+        <li><a href="">ffaf8</a></li>
+        <li><a href="">ffaf9</a></li>
+        <li><a href="">ffaf10</a></li>
+        <li><a href="">ffaf11</a></li>
+        <li><a href="">ffaf12</a></li>
+        <li><a href="">ffaf13</a></li>
+        <li><a href="">ffaf14</a></li>
+        <li><a href="">ffaf15</a></li>
+        <li><a href="">ffaf16</a></li>
+        <li><a href="">ffaf17</a></li>
+        <li><a href="">ffaf18</a></li>
+        <li><a href="">ffaf19</a></li>
+        <li><a href="">ffaf20</a></li>
+        <li><a href="">ffaf21</a></li>
+        <li><a href="">ffaf22</a></li>
+        <li><a href="">ffaf23</a></li>
+        <li><a href="">ffaf24</a></li>
+        <li><a href="">ffaf25</a></li>
+        <li><a href="">ffaf26</a></li>
+        <li><a href="">ffaf27</a></li>
+        <li><a href="">ffaf28</a></li>
+        <li><a href="">ffaf29</a></li>
+        <li><a href="">ffaf30</a></li>
+    </ul>
+</body>
+
+</html>

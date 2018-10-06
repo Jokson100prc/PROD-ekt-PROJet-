@@ -1,0 +1,195 @@
+<!-- Ustaw trzy kolumny za pomocą flex - max dla sekcji obejmującej 3 kolumny to 1200px -->
+<!-- Każda kolumna też ma byc kontenerem flex. Kolumny powinny mieć 25% szerokości rodzica, między kolumnami powinny być odstępy-->
+<!-- Cena zawsze na dole i obramowana -->
+<!-- link: https://websamuraj.pl/examples/fez/cennik.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cennik - wieczory panieńskie</title>
+    <style>
+        /* DISPLAY:GRID; */
+
+        /*    body {
+            background-color: rgb(221, 47, 183);
+            font-family: 'open-sans', sans-serif;
+            text-align: center;
+            min-height: 150vh;
+        }
+
+        h1 {
+            margin: 5vh;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: "firstCol secondCol thirdCol";
+            min-height: 67vh;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .col:first-child {
+            display: grid;
+            grid-area: firstCol;
+            grid-template-columns: 1fr;
+            grid-template-rows: 8vh 1fr 4vh 6vh;
+            grid-template-areas: "h2" "img" "p" "pp";
+            background-color: rgb(151, 32, 125);
+            border: 1px solid rgb(255, 0, 200);
+            box-shadow: 0 0 5px 1px rgb(165, 0, 129);
+            margin-bottom: 4vh;
+        }
+
+        .col:nth-child(2) {
+            display: grid;
+            grid-area: secondCol;
+            grid-template-columns: 1fr;
+            grid-template-rows: 8vh 1fr 4vh 4vh 6vh;
+            grid-template-areas: "h2" "img" "p" "pp" "p3";
+            background-color: rgb(151, 32, 125);
+            border: 1px solid rgb(255, 0, 200);
+            box-shadow: 0 0 5px 1px rgb(165, 0, 129);
+            margin-bottom: 4vh;
+        }
+
+        .col:last-child {
+            display: grid;
+            grid-area: thirdCol;
+            grid-template-columns: 1fr;
+            grid-template-rows: 8vh 1fr 4vh 4vh 4vh 6vh;
+            grid-template-areas: "h2" "img" "p" "pp" "p3" "p4";
+            background-color: rgb(151, 32, 125);
+            border: 1px solid rgb(255, 0, 200);
+            box-shadow: 0 0 5px 1px rgb(165, 0, 129);
+            margin-bottom: 4vh;
+        }
+
+        .col:hover {
+            background-color: rgb(209, 71, 179);
+            border: 2px solid rgb(255, 0, 200);
+            box-shadow: 0 0 15px 2px rgb(165, 0, 129);
+        }
+
+        img {
+            width: 63%;
+        }
+
+        span {
+            background-color: rgb(233, 107, 206);
+            border: 2px solid rgb(250, 53, 207);
+            cursor: pointer;
+        }
+
+        span:hover {
+            box-shadow: 0 0 8px 1px rgb(255, 90, 219);
+        }  */
+
+        /*   DISPLAY:FLEX; */
+
+        body {
+            background-color: rgb(221, 47, 183);
+            font-family: sans-serif;
+            text-align: center;
+            min-height: 150vh;
+        }
+
+        h1 {
+            margin: 5vh;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            min-height: 67vh;
+            margin-top: 13vh;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(151, 32, 125);
+            border: 1px solid rgb(255, 0, 200);
+            box-shadow: 0 0 5px 1px rgb(165, 0, 129);
+            flex-basis: 28%;
+            min-width: 320px;
+            margin-bottom: 4vh;
+        }
+
+        .col:hover {
+            background-color: rgb(209, 71, 179);
+            border: 2px solid rgb(255, 0, 200);
+            box-shadow: 0 0 15px 2px rgb(165, 0, 129);
+        }
+
+        h2 {
+            margin: 5vh 0;
+        }
+
+        img {
+            width: 63%;
+        }
+
+        p:last-child {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            justify-content: flex-end;
+            align-self: center;
+            width: 60%;
+        }
+
+        span {
+
+            padding: 1vh;
+            margin-bottom: 5vh;
+            background-color: rgb(233, 107, 206);
+            border: 2px solid rgb(250, 53, 207);
+            cursor: pointer;
+        }
+
+        span:hover {
+            box-shadow: 0 0 8px 1px rgb(255, 90, 219);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Wieczór panieński - zaproś naszego trola!</h1>
+    <section>
+        <div class="col">
+            <h2>Opcja 1</h2>
+            <img src="1.png" alt="">
+            <p>(bardzo) Tanio</p>
+            <p class="price"><span>100 dutków</span></p>
+        </div>
+        <div class="col">
+            <h2>Opcja 2</h2>
+            <img src="2.png" alt="">
+            <p>Średnio Tanio</p>
+            <p>Wielka pałka w zestawie</p>
+            <p class="price"><span>300 dutków</span></p>
+        </div>
+        <div class="col">
+            <h2>Opcja 3</h2>
+            <img src="3.png" alt="">
+            <p>Niezbyt tanio</p>
+            <p>Duża moc (wytrzyma noc)</p>
+            <p>Przystojny (jak na trola)</p>
+            <p class="price"><span>500 dutków</span></p>
+        </div>
+
+    </section>
+</body>
+
+</html>

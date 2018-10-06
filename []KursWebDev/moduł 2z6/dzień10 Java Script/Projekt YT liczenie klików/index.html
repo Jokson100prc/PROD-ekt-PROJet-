@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            background-color: #444;
+        }
+
+        div {
+            font-size: 36px;
+            padding: 15px 30px;
+            color: #d39000;
+            background-color: #007bb5;
+        }
+
+        button {
+            margin: 50px 40px 90px 60px;
+            ;
+            background-color: #007bb5;
+            font-size: 70px;
+            width: 69px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .plus {
+            color: #49b500;
+        }
+
+        .minus {
+            color: #b54900;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button class="plus">+</button><button class="minus">-</button>
+    <div> Click Counter: <span>0</span></div>
+
+
+    <script>
+        const listener = document.querySelector('span');
+        const plus = document.querySelector('.plus');
+        const minus = document.querySelector('.minus');
+        let target = 0;
+
+
+        plus.addEventListener('click', function () {
+            target++;
+            listener.innerHTML = target;
+        })
+
+        minus.addEventListener('click', function () {
+            target--;
+            listener.innerHTML = target;
+        })
+    </script>
+</body>
+
+</html>

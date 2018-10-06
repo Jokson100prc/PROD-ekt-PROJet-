@@ -1,0 +1,54 @@
+<!-- Zadanie 3 - Pobierz plik -->
+<!--
+1. Div z klasą profile (div.profile w którym jest zdjęcie, nazwisko i tekst) wyśrodkuj za pomocą margin i daj mu  szerokość 800px. Nie określaj jego wysokości.
+2. Zmień grafikę z prostokątnej na okrąglą za pomocą właściwości border-radius. Eksperymentuj z procentami i pikselami. Dodaj padding 20px do grafiki z każdej strony.
+3. Pozycjonuj (właściwość position) div.answer wewnątrz div.profile.
+-->
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rozmowa</title>
+
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        div.profile {
+            position: relative;
+            width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #cde;
+        }
+
+        img.avatar {
+            border-radius: 50%;
+        }
+
+        div.answer {
+            position: absolute;
+            top: 0;
+            left: 200px;
+            margin: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas temporibus ad officiis fugiat, amet. Aliquid non atque voluptates aspernatur esse numquam est eveniet ratione eimilique, porro, nihil vero distinctio illum. Modi accusamus sit labore fuga nihil numqi</p>
+    <div class="profile">
+        <img class="avatar" src="cat.jpg" alt="kot">
+        <div class="answer">
+            <h1 class="name">Jan Nowak</h1>
+            <p class="sentence">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, unde sapiente aliquid alias vitae et laborum laudantium quaerat in possimus a sequi quidem, beatae ea quod maxime. Numquam, tempore necessitatibus.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

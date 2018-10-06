@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --colorBlueLight: #007bb5;
+    /* var(--colorBlueLight) */
+    --colorBlue: #004869;
+    /* var(-colorBlue) */
+    --colorYellow: #b57b00;
+    /* var(--colorYellow) */
+    --colorOrange: #c65900;
+    /* var(--colorOrange) */
+    --colorRed: #b53300;
+    /* var(-colorRed) */
+    --colorGrey: #696969;
+    /* var(--colorGrey) */
+    --colorWhite: #ffffff;
+    /* var(--colorWhite) */
+    --colorBlack: #121212;
+    /* var(--colorBlack) */
+    --transition: .3s;
+    /* var(--transition) */
+}
+
+body {
+    background-color: var(--colorGrey);
+    color: var(--colorWhite);
+    min-height: 150vh;
+}
+
+.menu {
+    position: fixed;
+    bottom: -170px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background-color: var(--colorWhite);
+    border-top: 5px solid var(--colorRed);
+    transition: var(--transition);
+}
+
+.menu.on {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-top: 5px solid var(--colorOrange);
+}
+
+.burger {
+    position: fixed;
+    bottom: 50px;
+    right: 60px;
+    font-size: 50px;
+    color: var(--colorRed);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.burger.on {
+    bottom: 220px;
+    font-size: 50px;
+    color: var(--colorOrange);
+    animation: rotate .2s linear both;
+    animation-delay: .2S
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0)
+    }
+
+    100% {
+        transform: rotateZ(180deg);
+    }
+}
+
+.wrapper {
+    margin: 120px 40px;
+    transition: var(--transition);
+}

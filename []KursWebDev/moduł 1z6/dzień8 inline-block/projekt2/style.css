@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Teko&subset=latin-ext');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #333;
+  font-family: 'Teko', sans-serif;
+
+  font-size: 10px;
+}
+
+nav {
+  background: #efefef;
+  text-align: right;
+
+}
+
+nav a {
+  display: inline-block;
+  margin: 1.5vh 2vw 1.5vh 1vw;
+  color: firebrick;
+  text-decoration: none;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 1.3rem;
+}
+
+.cyz4 {
+  margin: 1.5vh 2vw 1.5vh 7vw;
+
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+}

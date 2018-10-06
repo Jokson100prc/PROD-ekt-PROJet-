@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu flex</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #333;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+        a {
+
+            flex-basis: 18%;
+            background-color: #007bb5;
+            text-decoration: none;
+            color: #e89d00;
+            font-size: 3vh;
+            padding: 1vh;
+            transition: .2s;
+        }
+
+        a:hover {
+            background-color: #e89d00;
+            color: #007bb5;
+        }
+
+        @media (min-width: 768px) {
+            ul {
+                flex-direction: row;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <a href="#">przycisk1</a>
+                <a href="#">przycisk2</a>
+                <a href="#">przycisk3</a>
+                <a href="#">przycisk4</a>
+                <a href="#">przycisk5</a>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>

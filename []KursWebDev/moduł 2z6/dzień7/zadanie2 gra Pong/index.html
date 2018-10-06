@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Animacja "Gra PONG"</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* table */
+            --tableWidth: 700px;
+            --tableHeight: 400px;
+            --tableBGC: #007bb5;
+
+            /* ball */
+            --ballWidth: 50px;
+            --ballHeight: 50px;
+            --ballRadius: 50%;
+            --ballColor: #f944af;
+
+            /* paddle */
+            --padT0p: calc(50% - var(--padHeight)/2);
+            --padFromEdge: 50px;
+            --padWidth: 30px;
+            --padHeight: 100px;
+            --padColor: #d87c00;
+
+            /* result */
+            --resultFontSize: 74px;
+
+            /* result */
+            --resultFontSize: 90px;
+            --animeDurationTResult: 1s;
+            --resultTop: 20%;
+            --resultLeft: 50%;
+
+            /* animation */
+            --animeDurationT: 5s;
+            --animeDelayT: calc(var(--animeDurationT) + 1s);
+        }
+
+        .table {
+            position: absolute;
+            top: calc(50% - var(--tableHeight)/2);
+            left: calc(50% - var(--tableWidth)/2);
+            width: var(--tableWidth);
+            height: var(--tableHeight);
+            background-color: var(--tableBGC);
+        }
+
+        .ball {
+            position: absolute;
+            top: calc(50% - var(--ballWidth)/2);
+            left: calc(50% - var(--ballHeight)/2);
+            width: var(--ballWidth);
+            height: var(--ballHeight);
+            border-radius: var(--ballRadius);
+            background-color: var(--ballColor);
+            animation: move var(--animeDurationT) linear both;
+        }
+
+        .paddle {
+            position: absolute;
+            top: var(--padT0p);
+            width: var(--padWidth);
+            height: var(--padHeight);
+            background-color: var(--padColor);
+            animation: both;
+        }
+
+        .player {
+            left: var(--padFromEdge);
+            animation: player var(--animeDurationT) linear both;
+        }
+
+        .ai {
+            right: var(--padFromEdge);
+            animation: ai var(--animeDurationT) linear both;
+        }
+
+        .result {
+            position: absolute;
+            top: var(--resultTop);
+            left: 0;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            font-size: var(--resultFontSize);
+            animation: tamtararam var(--animeDurationTResult) var(--animeDelayT) both;
+        }
+
+        @keyframes player {
+            25% {
+                top: calc(var(--padT0p) + 145px);
+            }
+
+            75% {
+                top: calc(var(--padT0p) - 145px);
+            }
+        }
+
+        @keyframes ai {
+            40% {
+                top: calc(var(--padT0p) + 145px);
+            }
+
+            100% {
+                top: calc(var(--padT0p) - 100px);
+            }
+        }
+
+        @keyframes move {
+            20% {
+                top: calc(80% - var(--ballHeight));
+                left: 575px;
+            }
+
+            60% {
+                top: calc(30% - var(--ballHeight));
+                left: 70px;
+            }
+
+            80% {
+                top: calc(20% - var(--ballHeight));
+                left: 440px;
+            }
+
+            100% {
+                top: calc(20% - var(--ballHeight));
+                left: 720px;
+            }
+        }
+
+        @keyframes tamtararam {
+            0% {
+                transform: scale(0);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="table">
+        <div class="ball"></div>
+        <div class="paddle player"></div>
+        <div class="paddle ai"></div>
+    </div>
+    <h1 class="result">wygrałeś!</h1>
+</body>
+
+</html>

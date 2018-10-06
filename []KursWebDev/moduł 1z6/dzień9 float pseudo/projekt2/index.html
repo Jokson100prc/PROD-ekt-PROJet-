@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>float:left; overflow:hiden;</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #999;
+    }
+
+    nav {
+      background: #444;
+    }
+
+    #bb {
+      list-style: none;
+      height: 100px
+    }
+
+    #bb li {
+      float: left;
+    }
+
+    #bb a {
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      margin: 20px;
+      background-color: aqua;
+    }
+
+    .bvc nav {
+      background: #700;
+      overflow: hidden;
+    }
+
+    .bvc ul {
+      list-style: none;
+    }
+
+    .bvc a {
+      float: left;
+      display: inline-block;
+      height: 60px;
+      line-height: 60px;
+      margin: 20px;
+      background-color: aqua;
+    }
+
+    article {
+      background: #000;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: right;
+    }
+
+    article section {
+      float: right;
+      width: 100px;
+      height: 100px;
+      margin: 30px;
+      border: 1px solid #006000;
+      background: #007700;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav>
+    <ul id="bb">
+      <li><a href="#" 1="">abc#$%%</a></li>
+      <li><a href="#" 2="">cba#$^%##a</a></li>
+      <li><a href="#" 3="">bac@$%%#@@$</a></li>
+      <li><a href="#" 4="">cab#$@%%@@</a></li>
+      <li><a href="#" 5="">bca##$@$$$</a></li>
+    </ul>
+  </nav>
+
+  <div class="bvc">
+    <nav>
+      <a href="">gfadga</a>
+      <a href="">ueyaa</a>
+      <a href="">zbcakn</a>
+      <a href="">aioewja</a>
+      <a href="">alkdfjfh</a>
+    </nav>
+  </div>
+
+  <article class="clearfix">
+    <section></section>
+    <section></section>
+    <section></section>
+  </article>
+
+  <section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam itaque earum laborum, voluptatum, culpa rem, harum officiis saepe cumque at facilis. Voluptatum facere fugit ipsa doloribus, obcaecati veritatis laudantium quos sequi similique, iure iste deleniti odio veniam iusto voluptatem rerum culpa dolores nemo nesciunt vel quae perferendis eaque architecto totam? Sit deserunt ut fugiat cupiditate deleniti dolorum omnis, id voluptas quo blanditiis aut consequuntur maxime inventore tempora sint sunt vel, optio minima provident possimus. Voluptas impedit, quisquam veniam debitis ipsam nulla vitae non animi consequuntur recusandae beatae omnis ipsum nesciunt, iusto doloribus magnam cum, optio explicabo eligendi quam pariatur odit, voluptatibus officia saepe. Libero odit eius eaque non, ducimus magnam aliquam, ipsam voluptate explicabo corrupti quisquam harum voluptatum veniam nam distinctio quis quibusdam molestias recusandae numquam dicta nemo, consequuntur mollitia. Placeat harum ipsam soluta. Quaerat consequuntur autem molestiae, recusandae ipsum necessitatibus ducimus sed tenetur ratione provident vel animi voluptatum quo eligendi porro a repudiandae quasi doloremque eaque, sapiente quibusdam nulla quae, enim molestias. Molestias veritatis autem maxime expedita, eveniet perferendis eaque adipisci dolore fugit nulla consequuntur necessitatibus rerum dolores mollitia facere, provident blanditiis aliquam nemo ratione. Eius aperiam, maxime cupiditate odit quia, doloremque optio distinctio impedit libero esse, pariatur voluptatibus?</section>
+
+</body>
+
+
+
+</html>

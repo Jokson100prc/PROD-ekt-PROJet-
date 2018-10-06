@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skrolowanie - efekt w JQ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .section1 {
+            background-color: rgb(32, 139, 143);
+            height: 70vh;
+        }
+
+        .section2 {
+            background-color: rgb(10, 34, 10);
+            height: 500px;
+
+        }
+
+        .section3 {
+            background-color: rgb(167, 46, 106);
+            height: 1190px;
+        }
+
+        .section4 {
+            background-color: rgb(102, 43, 28);
+            height: 150vh;
+        }
+
+        .info {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            height: 70px;
+            width: 100%;
+            box-shadow: 0 0 3px 3px grey;
+            background-color: rgb(200, 200, 200);
+            font-size: 30px;
+            line-height: 70px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section1"></section>
+    <section class="section2"></section>
+    <section class="section3"></section>
+    <section class="section4"></section>
+    <div class="info">WITAJ NA STRONIE</div>
+
+
+    <script>
+        function changeText() {
+            const txt = document.querySelector('.info');
+
+            const scrollDistance = window.scrollY;
+            console.log(scrollDistance);
+
+            const section1Height = document.querySelector('.section1').clientHeight;
+            const section2Height = document.querySelector('.section2').clientHeight;
+            const section3Height = document.querySelector('.section3').clientHeight;
+
+            const distanceToSection2 = document.querySelector('.section2').offsetTop;
+            const distanceToSection3 = document.querySelector('.section3').offsetTop;
+            console.log('ok')
+            if (scrollDistance < section1Height) {
+                txt.textContent = 'section1'
+            } else if (scrollDistance < section2Height + distanceToSection2) {
+                txt.textContent = 'section2'
+            } else if (scrollDistance < section3Height + distanceToSection3) {
+                txt.textContent = 'section3'
+            } else txt.textContent = 'section4'
+
+        }
+        document.addEventListener('scroll', changeText)
+    </script>
+</body>
+
+</html>

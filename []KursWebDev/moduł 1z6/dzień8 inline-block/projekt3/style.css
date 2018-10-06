@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+div.wrapper {
+	max-width: 920px;
+	margin: 0 auto;
+}
+
+nav {
+	font-size: 0; /*  ten zapis ratuje display:inline-block usuwając przestrzenie miedzy   */
+}
+
+nav a {
+	display: inline-block;
+	width: 25%;
+	background-color: gray;
+	font-family: arial, sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: #efefef; 
+	height: 40px;		/*   zamiennie:     */
+	line-height: 40px;/*	padding: 5px 0;    */
+}
+  
+a:hover {
+	color: #000;
+	border-bottom: 2px solid;
+	background-color: #efefef;
+}
+
+a.xvl1 {
+	background-color: #deb887;
+}
+
+a.xvl2 {
+	background-color: deepskyblue;
+}
+
+.xvl3 {
+	background-color: darkcyan;
+}
+
+.xvl4 {
+	background-color: royalblue;
+}
+/*    	  
+		  Poniższy Blok Deklaracji zadziała na wszystkie 4 a:hover
+	  ponieważ jest pod spodem równożednych lini,
+      zatem zadziała zasada kaskadowości, 
+	  która mówi że jeśli zapisy są równoważne to wygra
+	  ten zapis który jest "krócej na boisku" 
+	  jest niżej zapisany, czyli teoretycznie powstał później. 
+	  Jest Młodszy.  */
+/*
+	  
+a:hover {
+	color: #000;
+	border-bottom: 2px solid;
+	background-color: #efefef;
+}
+*/
+
+header {
+	height: 200px;
+	background-color: #5f9ea0;
+}
+
+main {
+	height: 60vh;
+	background-color: #deb887;
+}
+
+footer {
+	min-height: 70px;
+	background-color: #008b8b;
+}

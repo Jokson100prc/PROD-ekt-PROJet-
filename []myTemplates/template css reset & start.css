@@ -1,0 +1,32 @@
+
+* {
+margin: 0;
+padding:  0;
+box-sizing:  border-box;
+}
+
+:root {
+    --colorBlueLight: #007bb5;
+    /* var(--colorBlueLight) */
+    --colorBlue: #004869;
+    /* var(-colorBlue) */
+    --colorYellow: #b57b00;
+    /* var(--colorYellow) */
+    --colorOrange: #c65900;
+    /* var(--colorOrange) */
+    --colorRed: #b53300;
+    /* var(-colorRed) */
+    --colorGrey: #696969;
+    /* var(--colorGrey) */
+    --colorWhite: #ffffff;
+    /* var(--colorWhite) */
+    --colorBlack: #121212;
+    /* var(--colorBlack) */
+    --transition: .3s;
+    /* var(--transition) */
+}
+
+body {
+	background-color: #555;
+	color: white;
+}

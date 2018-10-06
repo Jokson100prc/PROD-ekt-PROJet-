@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Scrypt i scroll event</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 453vh;
+            background-image: linear-gradient(-45deg, #333 10%, #007bb5 90%);
+        }
+
+        .barStatus {
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-image: linear-gradient(#fff 0%, #000 100%);
+            width: 0%;
+            height: 5vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="barStatus"></div>
+    <script>
+        const barStatus = document.querySelector('.barStatus');
+
+        const barProgres = () => {
+            let currentScroll = Math.floor(window.scrollY / (document.documentElement.offsetHeight - window.innerHeight) *
+                101);
+            console.log(currentScroll);
+            barStatus.style.width = currentScroll + "%";
+        }
+
+
+        document.addEventListener('scroll', barProgres);
+    </script>
+</body>
+
+</html>

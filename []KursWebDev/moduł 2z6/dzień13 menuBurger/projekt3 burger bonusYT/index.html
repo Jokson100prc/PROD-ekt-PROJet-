@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="description" content="Opis w Google">
+    <meta name="keywords" content="słowa, kluczowe, wypisane, po, porzecinku">
+    <meta name="author" content="Marcin Zawacki marcinzacki@gmail.com">
+    <title>Hamburger bonus z YT</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --widthVegB: 50px;
+            /* var(--widthVegB) */
+            --heihgtVegB: 42px;
+            /* var(--heihgtVegB) */
+            --colorGrey: #444;
+            /* var(--colorGrey) */
+            --colorWhite: #ffffff;
+            /* var(--colorWhite) */
+            --colorBlack: #121212;
+            /* var(--colorBlack) */
+            --bRadius: 5px;
+            /* border-radius: var(--bRadius); */
+            --transitionAll: .3s;
+            /* transition: var(--transitionAll); */
+            --transition: top .3s linear, bottom .3s linear, opacity .3s, transform .3s .3s linear;
+            /* transition: var(--transition); */
+        }
+
+        body {
+            background-color: var(--colorGrey);
+            color: var(--colorWhite);
+        }
+
+        .vegeburger {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            width: var(--widthVegB);
+            height: var(--heihgtVegB);
+            background-color: var(--colorBlack);
+            transition: var(--transitionAll);
+        }
+
+        .vegeburger.active {
+            transform: rotate(90deg);
+            border-radius: var(--bRadius);
+        }
+
+        .vegeburger.active .Dx {
+            border-radius: var(--bRadius);
+        }
+
+        .Dx {
+            position: absolute;
+            background-color: var(--colorWhite);
+            width: var(--widthVegB);
+            height: calc(var(--heihgtVegB)/7);
+            transition: var(--transitionAll);
+        }
+
+        .one {
+            top: 0;
+            left: 0;
+        }
+
+        .two {
+            top: calc(50% - var(--heihgtVegB)/14);
+            left: 0;
+        }
+
+        .three {
+            bottom: 0;
+            left: 0;
+        }
+
+        .vegeburger.active .one {
+            top: calc(50% - var(--heihgtVegB)/14);
+            transform: rotate(-45deg);
+        }
+
+        .vegeburger.active .two {
+            opacity: 0;
+        }
+
+        .vegeburger.active .three {
+            bottom: calc(50% - var(--heihgtVegB)/14);
+            transform: rotate(45deg);
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="vegeburger">
+        <div class="Dx one"></div>
+        <div class="Dx two"></div>
+        <div class="Dx three"></div>
+    </div>
+
+    <script>
+        const vege = document.querySelector('.vegeburger');
+
+        vege.addEventListener('click', function () {
+            vege.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

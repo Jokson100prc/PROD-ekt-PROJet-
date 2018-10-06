@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Galeria Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            background-color: #454;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        h1 {
+            padding: 3vmin;
+            font-size: 11vmin;
+            background-color: #000;
+            color: white;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        div img {
+            margin-top: 8vmin;
+            width: 100%;
+            border: 2px solid #454;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GALERIA</h1>
+    <section>
+        <div>
+            <img src="img1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img4.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="img1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img4.jpg" alt="">
+        </div>
+    </section>
+</body>
+
+</html>

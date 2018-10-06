@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Layout zbudowany CSS Gridem</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            grid-template-rows: 18vh 8vh 1fr 8vh;
+            min-height: 100vh;
+            grid-template-areas: "head head" "navTop navTop" "blog add" "foot foot";
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            grid-area: head;
+            background-color: #007bb5;
+        }
+
+        nav {
+            grid-area: navTop;
+            background-color: #191919;
+        }
+
+        main {
+            grid-area: blog;
+            background-color: #7bb500;
+        }
+
+        aside {
+            grid-area: add;
+            background-color: #b57b00;
+        }
+
+        footer {
+            grid-area: foot;
+            background-color: #191919;
+        }
+
+        @media (max-width:1023px) {
+            body {
+                grid-template-columns: 1fr;
+                grid-template-rows: 8vh 18vh 1fr 160px 8vh;
+                grid-template-areas: "navTop" "head" "blog" "add" "foot";
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header></header>
+    <nav></nav>
+    <main></main>
+    <aside></aside>
+    <footer></footer>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skrolowanie - efekt w JQ</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .section1 {
+            background-color: rgb(32, 139, 143);
+            height: 70vh;
+        }
+
+        .section2 {
+            background-color: rgb(10, 34, 10);
+            height: 500px;
+
+        }
+
+        .section3 {
+            background-color: rgb(167, 46, 106);
+            height: 1290px;
+        }
+
+        .section4 {
+            background-color: rgb(102, 43, 28);
+            height: 150vh;
+        }
+
+        .info {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 70px;
+            width: 100%;
+            box-shadow: 0 0 3px 3px grey;
+            background-color: rgb(200, 200, 200);
+            font-size: 30px;
+            line-height: 70px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section1"></section>
+    <section class="section2"></section>
+    <section class="section3"></section>
+    <section class="section4"></section>
+    <div class="info">Witaj !!</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script>
+        function changeTxt() {
+            const scrollDistance = $(window).scrollTop();
+
+            const section1Height = $('.section1').height();
+            const section2Height = $('.section2').height();
+            const section3Height = $('.section3').height();
+
+            const distanceTosection2 = $('.section2').offset().top;
+            const distanceTosection3 = $('.section3').offset().top;
+
+            if (section1Height > scrollDistance) {
+                $('.info').text('section1')
+            } else if (section2Height + distanceTosection2 > scrollDistance) {
+                $('.info').text('section2')
+            } else if (section3Height + distanceTosection3 > scrollDistance) {
+                $('.info').text('section3')
+            } else $('.info').text('section4')
+
+        }
+        $(window).on('scroll', changeTxt)
+    </script>
+</body>
+
+</html>
+
+<!--
+
+        $(document).on('scroll', function () {
+            const scrollPosition = $(document).scrollTop();
+
+            const section1Height = $('.section1').height();
+            const section2Height = $('.section2').height();
+            const section3Height = $('.section3').height();
+            const section4Height = $('.section4').height();
+
+            const section2Distance = $('.section2').offset().top;
+            const section3Distance = $('.section3').offset().top;
+            const section4Distance = $('.section4').offset().top;
+            console.log((scrollPosition))
+            console.log((section2Distance + section2Height))
+            if (scrollPosition < section1Height) {
+                $('.info').text('section1')
+            } else if (scrollPosition < section2Distance + section2Height) {
+                $('.info').text('section2')
+            } else if (scrollPosition < section3Distance + section3Height) {
+                $('.info').text('section3')
+            } else $('.info').text('section4')
+        }) 
+         -->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrollowanie + filtry bg-Image</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            height: 100vh;
+            background-image: url("bg.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        main {
+            min-height: 150vh;
+            background-color: #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header></header>
+    <main></main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        const $doc = $(document);
+        const $head = $('header');
+        const $main = $('main');
+
+        $doc.on('scroll', function () {
+            const ScrPosition = $doc.scrollTop();
+
+            const headH = $head.outerHeight();
+
+            const headOffS = $head.offset().top;
+            const mainOffS = $main.offset().top;
+
+            if (ScrPosition < mainOffS) {
+                $head.css({
+                    'opacity': 1 - ScrPosition / headH,
+                    'filter': "grayscale(" + 2 * ScrPosition / headH + ")"
+                })
+            }
+        })
+        // console.log('ok')
+    </script>
+
+</body>
+
+</html>

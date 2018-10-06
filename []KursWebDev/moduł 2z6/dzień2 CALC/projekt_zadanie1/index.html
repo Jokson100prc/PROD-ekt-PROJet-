@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Projekt/zadanie dzień2 10vh 90vh suwak 200vh</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --navH: 10vh;
+            --headerH: 90vh;
+            --width: 100%;
+        }
+
+        body {
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-family: sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            line-height: var(--navH);
+            height: var(--navH);
+            width: var(--width);
+            background-color: black;
+        }
+
+        header {
+            position: fixed;
+            top: var(--navH);
+            left: 0;
+            z-index: -1;
+            line-height: var(--headerH);
+            height: var(--headerH);
+            width: var(--width);
+            background-color: brown;
+        }
+
+        section {
+            background-image: linear-gradient(135deg, green 0%, blue 25%, violet 50%, red 75%, orange 95%);
+            line-height: calc(2 * (var(--navH) + var(--headerH)));
+            height: calc(2 * (var(--navH) + var(--headerH)));
+            width: var(--width);
+            margin-top: calc(var(--navH) + var(--headerH));
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav>10% wysokości okna</nav>
+    <header>90%</header>
+
+    <section>element nachodzący od dołu na element "90%" </section>
+</body>
+
+</html>
