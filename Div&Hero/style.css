@@ -1,0 +1,151 @@
+:root {
+    --colorBlue: #4482bb;
+    --colorBlue: #000000;
+    --colorBlueLight: #007bb5;
+    /* var(--colorBlueLight) */
+    --colorBlue: #004869;
+    /* var(-colorBlue) */
+    --colorYellow: #b57b00;
+    /* var(--colorYellow) */
+    --colorOrange: hsl(27, 100%, 39%);
+    /* var(--colorOrange) */
+    --colorRed: #b53300;
+    /* var(-colorRed) */
+    --colorGrey: #696969;
+    /* var(--colorGrey) */
+    --colorWhite: #ffffff;
+    /* var(--colorWhite) */
+    --colorBlack: #121212;
+    /* var(--colorBlack) */
+    --transition: .3s;
+    /* transition: var(--transition); */
+}
+
+body {
+    background-color: #d0daca;
+}
+
+div {
+    display: inline-block;
+}
+
+button {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.zamek-1 {
+    background-size: cover;
+    background-position: bottom center;
+    width: 28vmin;
+    height: 23vmin;
+    background-image: url("Zamki/zamek-1.png");
+}
+
+.zamek-2 {
+    background-size: cover;
+    background-position: bottom center;
+    width: 28vmin;
+    height: 28vmin;
+    background-image: url("Zamki/zamek-2.png");
+}
+
+.zamek-3 {
+    background-size: cover;
+    background-position: bottom center;
+    width: 29vmin;
+    height: 23vmin;
+    background-image: url("Zamki/zamek-3.png");
+}
+
+.surowce-1 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: var(--colorOrange);
+}
+
+.surowce-2 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: var(--colorRed);
+}
+
+.surowce-3 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: var(--colorYellow);
+}
+
+.droga-1 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: var(--colorWhite);
+}
+
+.droga-2 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: var(--colorBlack);
+}
+
+.droga-3 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #696969;
+}
+
+.woda-1 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #14b2bd;
+}
+
+.woda-2 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #47beb9;
+}
+
+.woda-3 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #0b0dac;
+}
+
+.przeszkoda-1 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #02ac49;
+}
+
+.przeszkoda-2 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #2e853a;
+}
+
+.przeszkoda-3 {
+    width: 8vmin;
+    height: 8vmin;
+    background-color: #4fac3d;
+}
+
+.odleglosc-1 {
+    width: 8vmin;
+    height: 8vmin;
+    border: 5px solid #9000a3;
+}
+
+.odleglosc-2 {
+    width: 8vmin;
+    height: 8vmin;
+    border: 5px solid #9e00a3;
+}
+
+.odleglosc-3 {
+    width: 8vmin;
+    height: 8vmin;
+    border: 5px solid #a3009b;
+}
