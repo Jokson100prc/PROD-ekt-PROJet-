@@ -1,39 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
-    --colorBlue: #4482bb;
-    --colorBlue: #000000;
-    --colorBlueLight: #007bb5;
+    --colorBlueLight: #007bb544;
     /* var(--colorBlueLight) */
-    --colorBlue: #004869;
-    /* var(-colorBlue) */
-    --colorYellow: #b57b00;
+    --colorBlue: #00486944;
+    /* var(--colorBlue) */
+    --colorGreen: #00691244;
+    /* var(--colorGreen) */
+    --colorYellow: #ffae0033;
     /* var(--colorYellow) */
-    --colorOrange: hsl(27, 100%, 39%);
+    --colorOrange: #e6670044;
     /* var(--colorOrange) */
-    --colorRed: #b53300;
-    /* var(-colorRed) */
-    --colorGrey: #696969;
+    --colorRed: #b51b0044;
+    /* var(--colorRed) */
+    --colorGrey: #69696944;
     /* var(--colorGrey) */
-    --colorWhite: #ffffff;
+    --colorWhite: #ffffff2f;
     /* var(--colorWhite) */
-    --colorBlack: #121212;
+    --colorBlack: #12121288;
     /* var(--colorBlack) */
+    --colorBeigle: #d0bfba;
+    /* var(--colorBeigle) */
     --transition: .3s;
     /* transition: var(--transition); */
+    --bottomImput: 50px;
+    /* bottom: var(--bottomImput); */
+    --bRadius: 3px;
+    /* border-radius: var(--bRadius); */
 }
 
 body {
-    background-color: #d0daca;
+    background-color: var(--colorBeigle);
+    font-family: sans-serif;
+}
+
+.bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/background_demon_image.jpg);
+    animation: opacity 4s .5s both;
+}
+
+@keyframes opacity {
+    100% {
+        opacity: .33;
+    }
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 50px;
+    background-color: var(--colorOrange);
+    border: none;
+    border-radius: var(--bRadius);
+    transition: var(--transition);
+}
+
+.start {
+    font-size: 36px;
+    z-index: 1;
+}
+
+.start.active {
+    display: none;
+}
+
+.start:hover {
+    background-color: var(--colorYellow);
+    border: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.modal.active {
+    display: block;
+}
+
+input {
+    position: absolute;
+    color: var(--colorWhite);
+    width: 13vw;
+    border-radius: var(--bRadius);
+    border: 1px solid var(--colorWhite);
+    padding: 10px 30px;
+    font-size: 22px;
+}
+
+#ui {
+    font-size: 26px;
+}
+
+#ui:hover {
+    font-size: 30px;
+    background-color: var(--colorYellow);
+}
+
+#ui:focus {
+    background-color: var(--colorYellow);
+    box-shadow: 0 0 5px 0 var(--colorOrange);
+}
+
+.go.move {
+    position: fixed;
+    top: 50px;
+    left: 100px;
+    z-index: 2;
 }
 
 div {
     display: inline-block;
 }
 
-button {
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
+#zamek {
+    bottom: var(--bottomImput);
+    left: 4vw;
+    background-color: var(--colorBlack);
+}
+
+#surowce {
+    bottom: var(--bottomImput);
+    left: 17vw;
+    background-color: var(--colorRed);
+}
+
+#droga {
+    bottom: var(--bottomImput);
+    left: 30vw;
+    background-color: var(--colorGrey);
+}
+
+#woda {
+    bottom: var(--bottomImput);
+    left: 43vw;
+    background-color: var(--colorBlueLight);
+}
+
+#przeszkoda {
+    bottom: var(--bottomImput);
+    left: 56vw;
+    background-color: var(--colorGreen);
+}
+
+#odleglosc {
+    bottom: var(--bottomImput);
+    left: 69vw;
+    background-color: var(--colorYellow);
+}
+
+#ilosc {
+    bottom: var(--bottomImput);
+    left: 82vw;
+    background-color: var(--colorOrange);
 }
 
 .zamek-1 {
@@ -61,91 +198,111 @@ button {
 }
 
 .surowce-1 {
-    width: 8vmin;
+    width: 14vmin;
     height: 8vmin;
     background-color: var(--colorOrange);
 }
 
 .surowce-2 {
-    width: 8vmin;
+    width: 14vmin;
     height: 8vmin;
     background-color: var(--colorRed);
 }
 
 .surowce-3 {
-    width: 8vmin;
+    width: 14vmin;
     height: 8vmin;
     background-color: var(--colorYellow);
 }
 
 .droga-1 {
-    width: 8vmin;
-    height: 8vmin;
+    width: 4vmin;
+    height: 16vmin;
     background-color: var(--colorWhite);
 }
 
 .droga-2 {
-    width: 8vmin;
-    height: 8vmin;
+    width: 4vmin;
+    height: 28vmin;
     background-color: var(--colorBlack);
 }
 
 .droga-3 {
-    width: 8vmin;
-    height: 8vmin;
+    width: 20vmin;
+    height: 4vmin;
     background-color: #696969;
 }
 
 .woda-1 {
-    width: 8vmin;
-    height: 8vmin;
+    width: 44vmin;
+    height: 36vmin;
     background-color: #14b2bd;
 }
 
 .woda-2 {
-    width: 8vmin;
-    height: 8vmin;
+    width: 25vmin;
+    height: 20vmin;
     background-color: #47beb9;
 }
 
 .woda-3 {
-    width: 8vmin;
-    height: 8vmin;
+    width: 33vmin;
+    height: 15vmin;
     background-color: #0b0dac;
 }
 
 .przeszkoda-1 {
-    width: 8vmin;
-    height: 8vmin;
-    background-color: #02ac49;
+    width: 13vmin;
+    height: 13vmin;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url("img/przeszkoda-1.png");
 }
 
 .przeszkoda-2 {
-    width: 8vmin;
-    height: 8vmin;
-    background-color: #2e853a;
+    width: 14vmin;
+    height: 11vmin;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url("img/przeszkoda-2.png");
 }
 
 .przeszkoda-3 {
-    width: 8vmin;
-    height: 8vmin;
-    background-color: #4fac3d;
+    width: 13vmin;
+    height: 10vmin;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-image: url("img/przeszkoda-3.png");
 }
 
 .odleglosc-1 {
-    width: 8vmin;
-    height: 8vmin;
-    border: 5px solid #9000a3;
+    margin: 13vmin 22vmin;
+    width: 1vmin;
+    height: 1vmin;
+    border: 5px solid #d402f0;
 }
 
 .odleglosc-2 {
-    width: 8vmin;
-    height: 8vmin;
+    margin: 23vmin 22vmin;
+    width: 1vmin;
+    height: 1vmin;
     border: 5px solid #9e00a3;
 }
 
 .odleglosc-3 {
-    width: 8vmin;
-    height: 8vmin;
-    border: 5px solid #a3009b;
+    margin: 31vmin 22vmin;
+    width: 1vmin;
+    height: 1vmin;
+    border: 5px solid #5a0056;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
 }

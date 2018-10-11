@@ -2,11 +2,11 @@ window.onload = function (e) {
     const main = document.getElementById("main");
     const ui = document.getElementById("ui");
     const createObject = function () {
-        var div = document.createElement('div');
+        const div = document.createElement('div');
         div.innerHTML = "div";
         return div;
     };
-    var staticObjList = {
+    const staticObjList = {
         objectTypeList: {
             "zamek": {
                 1: "zamek-1",
@@ -42,8 +42,8 @@ window.onload = function (e) {
         },
         getBoost: function (boost, id) {
             console.log([boost, id]);
-            var arr = [];
-            for (var i = 0; i < boost; i++) {
+            const arr = [];
+            for (let i = 0; i < boost; i++) {
                 arr.push(id);
             }
             return arr;
@@ -77,7 +77,7 @@ window.onload = function (e) {
             generateType: function () {
                 this.obj.classList.add(
                     staticObjList.generate(
-                        staticObjList.objectTypeList["surowce"]
+                        staticObjList.objectTypeList["przeszkoda"]
                     )
                 );
                 outerHtml = this.obj.outerHTML;
@@ -155,4 +155,13 @@ window.onload = function (e) {
             main.innerHTML = space;
         }
     }
-}
+};
+
+
+$('.start').on('click', function () {
+    $('.start, .modal').toggleClass('active');
+});
+
+$('.go').on('click', function () {
+    $('.go').addClass('move');
+});

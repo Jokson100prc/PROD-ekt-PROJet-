@@ -5,25 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <script src="script.js"> </script>
+    <title>Map Generator by MasterKaczyNoris and Jokson100prc</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <input id="zamek" type="text" value="zamek">
-    <input id="surowce" type="text" value="surowce">
-    <input id="droga" type="text" value="droga">
-    <input id="woda" type="text" value="woda">
-    <input id="przeszkoda" type="text" value="przeszkoda">
-    <input id="odleglosc" type="text" value="odleglosc">
-    <input id="ilosc" type="text" value="ilosc">
-    <div class="container" id="main">
 
-    </div>
-    <button id="ui">
-        Go
-    </button>
+    <button class="start">Begin the Journey!</button>
+
+    <span class="bg-img">
+        <span class="shadow top"></span>
+    <span class="shadow bottom"></span>
+    </span>
+
+
+    <section class="modal">
+        <input id="zamek" type="number" value="1" min="1">
+        <input id="surowce" type="number" value="1" min="1">
+        <input id="droga" type="number" value="1" min="1">
+        <input id="woda" type="number" value="1" min="1">
+        <input id="przeszkoda" type="number" value="1" min="1">
+        <input id="odleglosc" type="number" value="1" min="1">
+        <input id="ilosc" type="number" value="111" min="33">
+
+
+        <button id="ui" class="go"> <i class="fas fa-dice"></i> </button>
+    </section>
+    <div class="container" id="main"></div>
+    <script src="script.js">
+    </script>
 </body>
 
 </html>
