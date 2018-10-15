@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random numbers (From To)</title>
+
+    <style>
+        body {
+            background-color: #333;
+            color: #ccc;
+            font-size: 69px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="num"></p>
+    <p class="int"></p>
+    <script>
+        // random numbers   
+        const randomNumbers = (min = 3, max = 12) => {
+
+            const number = `${Math.random()*(max - min) + min}`;
+            const num = document.querySelector('.num');
+            num.textContent = number;
+        };
+        setInterval(randomNumbers, 1000);
+        // random numbers from 3 to 12  
+        const randomNumbersInt = (min = 3, max = 12) => {
+
+            const numberInt = `${Math.floor(Math.random()*(max - min + 1) + min)}`;
+            const int = document.querySelector('.int');
+            int.textContent = numberInt;
+        };
+        setInterval(randomNumbersInt, 1000);
+    </script>
+</body>
+
+</html>
