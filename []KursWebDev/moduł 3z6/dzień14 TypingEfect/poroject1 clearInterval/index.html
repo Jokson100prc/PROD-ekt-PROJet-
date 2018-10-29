@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing by JS</title>
+    <style>
+        body {
+            background-color: #333;
+            color: #ccc;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        span {
+            margin-top: 50px;
+            font-size: 60px;
+            letter-spacing: 1px;
+        }
+
+        .cursor {
+            font-weight: 900;
+            color: black;
+            animation: ping .8s linear infinite;
+        }
+
+        /*class.cursor for use 'ping' by JS */
+        /* .cursor.active {
+            opacity: 0;
+        } */
+
+        @keyframes ping {
+            0% {
+                opacity: 1;
+                color: black;
+            }
+
+            20% {
+                opacity: 1;
+            }
+
+            25% {
+                opacity: 0;
+                color: black;
+            }
+
+            45% {
+                opacity: 0;
+                color: crimson;
+            }
+
+            50% {
+                opacity: 1;
+                color: crimson;
+            }
+
+            70% {
+                opacity: 1;
+                color: crimson;
+            }
+
+            75% {
+                opacity: 0;
+                color: crimson;
+            }
+
+            95% {
+                opacity: 0;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <span class="typing"></span><span class="cursor">|</span>
+    <script>
+        const spanTyping = document.querySelector('.typing');
+        const txt = "Bla bla bla... KONIEC!";
+
+
+        let textIndex = 0;
+        const addLetter = () => {
+            spanTyping.textContent += txt[textIndex];
+            textIndex++;
+            if (textIndex == txt.length) clearInterval(indexInterval);
+            // spanColor();
+        }
+        const indexInterval = setInterval(addLetter, 100);
+
+        // const cursor = document.querySelector('.cursor');
+        // const ping = () => {
+        //     cursor.classList.toggle('active');
+        // };
+        // setInterval(ping, 400);
+
+
+
+        // change span color
+        // const hexadecimal = ['09678f', 'ad1f6c', '32456f', '8749f3', '444', '859033', 'f64c78', '7fd537', 
+        //     '56f4c8','99f096', '4978f0', 'ad1f74', '49fb55', 'c749f3', 'dcb', 'ea3', '3f3'];
+        // 
+        // const spanColor = () => {
+        //     const newColor = hexadecimal[Math.floor(Math.random() * 15)];
+        //     spanTyping.style.color = `#${newColor}`;
+        // }
+    </script>
+</body>
+
+</html>

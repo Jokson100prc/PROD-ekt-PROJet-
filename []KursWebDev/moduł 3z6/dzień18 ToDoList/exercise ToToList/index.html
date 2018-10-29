@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form action="">
+        <div class="searchBox">
+            <input class="inputSearch" type="text" placeholder="search task">
+            <button class="search">Search
+                task</button></div>
+        <div class="todo">
+            <input class="inputTask" type="text" placeholder="add task">
+            <button class="addTask">Add task</button>
+        </div>
+    </form>
+    <h1>Task number: <span>0</span></h1>
+    <ul></ul>
+
+    <ul class="fixed"></ul>
+
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.6/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyALhs1P_rg1aO48L0c7rIZtni59cB35l8I",
+            authDomain: "todolist-22ff8.firebaseapp.com",
+            databaseURL: "https://todolist-22ff8.firebaseio.com",
+            projectId: "todolist-22ff8",
+            storageBucket: "",
+            messagingSenderId: "489481714890"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="todojs.js"></script>
+</body>
+
+</html>

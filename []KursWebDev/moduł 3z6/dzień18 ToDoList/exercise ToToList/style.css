@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 20px;
+}
+
+body {
+    background-color: #333;
+    color: burlywood;
+    text-align: center;
+}
+
+button {
+    padding: 3px 12px;
+    font-size: 22px;
+    background-color: rgb(157, 226, 78);
+    cursor: pointer;
+}
+
+input.inputSearch {
+    margin: 10px auto;
+}
+
+button.search:hover {
+    background-color: rgb(78, 184, 226);
+}
+
+input.inputTask {
+    margin: 25px auto 10px;
+}
+
+button.addTask {
+    margin: auto;
+    ;
+}
+
+button.addTask:hover {
+    background-color: rgb(226, 216, 78);
+}
+
+button:hover {
+    background-color: rgb(226, 100, 78);
+}
+
+ul {
+    margin: 36px;
+}
+
+ul.fixed {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    background-color: rgb(226, 216, 78);
+    color: #444;
+    padding: 20px;
+}
+
+li {
+    font-size: 32px;
+    list-style-type: none;
+    letter-spacing: 1px;
+    line-height: 140%;
+}

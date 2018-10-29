@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TODO list, add li </title>
+    <style>
+        body {
+        background-color: #333;
+        color: burlywood;
+        text-align: center;
+    }
+    
+        button {
+        margin-left: 25px;
+        font-size: 22px;
+        background-color: rgb(157, 226, 78);
+        cursor: pointer;
+    }
+    
+        input.inputTask{
+        margin: 25px auto 10px;
+    }
+    
+        button.addTask {
+        margin: 10px auto 25px ;
+    }
+    
+    button.addTask:hover {
+        background-color: rgb(78, 184, 226);
+    }
+    
+        button:hover {
+        background-color: rgb(226, 100, 78);
+    }
+    
+        ul {
+        margin: 50px;
+    }
+    
+        li {
+        font-size: 44px;
+        list-style-type: none;
+        letter-spacing: 1px;
+        line-height: 140%;
+    }
+    </style>
+
+</head>
+
+<body>
+    <form action="">
+        <input class="inputTask" type="text">
+        <button class="addTask">Add task</button>
+    </form>
+    <h1>Task number: <span>0</span></h1>
+    <ul></ul>
+    <script src="main.js"></script>
+</body>
+
+</html>

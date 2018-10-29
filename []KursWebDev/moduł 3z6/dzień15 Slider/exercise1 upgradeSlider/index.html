@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Slider</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+    crossorigin="anonymous">
+  <style>
+    * {
+      margin: 0;
+    }
+
+    header {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    img {
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0.6;
+    }
+
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      font-family: tahoma, sans-serif;
+      text-shadow: 0 0 6px white;
+    }
+
+    .dots {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%)
+    }
+
+    .dots span {
+      display: inline-block;
+      background-color: #000;
+      margin: 0 20px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px white;
+    }
+
+    .dots span.active {
+      box-shadow: 0 0 0 5px white, 0 0 3px 10px crimson;
+    }
+
+    .quiver {}
+
+    .arrows {
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      /* background-color: #000; */
+      margin: 0 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      box-shadow: 0 0 0 5px white;
+    }
+
+    .arrows .fas {
+      font-size: 50px;
+    }
+
+    .arrows:hover {
+      box-shadow: 0 0 0 5px white, 0 0 3px 10px crimson;
+    }
+
+    .right {
+      right: 10vw;
+    }
+
+    .left {
+      left: 10vw;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <img class="slider" src="images/img1.jpg" alt="">
+    <h1 class="slider">Pierwszy tekst</h1>
+
+    <div class="dots">
+      <span id="one" class="active"></span>
+      <span id="two"></span>
+      <span id="three"></span>
+    </div>
+    <div class="quiver">
+      <div class="arrows right"><i class="fas fa-arrow-alt-circle-right"></i></div>
+      <div class="arrows left"><i class="fas fa-arrow-alt-circle-left"></i></div>
+    </div>
+  </header>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

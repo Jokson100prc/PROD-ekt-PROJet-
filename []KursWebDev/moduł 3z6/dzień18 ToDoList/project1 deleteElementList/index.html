@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DELETE items</title>
+
+    <style>
+        body {
+            background-color: #333;
+            color: burlywood;
+            text-align: center
+        }
+
+        button {
+            margin-left: 25px;
+            font-size: 22px;
+            background-color: rgb(157, 226, 78);
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(226, 100, 78);
+        }
+
+        ul {
+            margin: 50px;
+        }
+
+        li {
+            font-size: 44px;
+            list-style-type: none;
+            letter-spacing: 1px;
+            line-height: 140%;
+        }
+    </style>
+
+</head>
+
+<body>
+    <ul>
+        <li data-key="1">todo-1 <button data-key="1">delete</button></li>
+        <li data-key="2">todo-2 <button data-key="2">delete</button></li>
+        <li data-key="3">todo-3 <button data-key="3">delete</button></li>
+        <li data-key="4">todo-4 <button data-key="4">delete</button></li>
+        <li data-key="5">todo-5 <button data-key="5">delete</button></li>
+        <li data-key="6">todo-6 <button data-key="6">delete</button></li>
+        <li data-key="7">todo-7 <button data-key="7">delete</button></li>
+        <li data-key="8">todo-8 <button data-key="8">delete</button></li>
+        <li data-key="9">todo-9 <button data-key="9">delete</button></li>
+        <li data-key="10">todo-10 <button data-key="10">delete</button></li>
+    </ul>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!--  this show's some  problems when triger (button) is not in NODE (ul>li)
+    and some behavior  by button->parents->inherit
+
+    <style>
+        body {
+            background-color: #333;
+            color: burlywood;
+        }
+
+        button {
+            font-size: 36px;
+            background-color: red;
+        }
+
+        ul {
+            margin: 50px;
+        }
+
+        li button {
+            background-color: burlywood !important;
+        }
+
+        ul button {
+            font-size: 26px;
+            background-color: green;
+        }
+
+        li {
+            font-size: 44px;
+            list-style-type: none;
+            letter-spacing: 1px;
+            line-height: 140%;
+        }
+    </style>
+
+</head>
+
+<body><button data-key="7">delete7</button>
+    <ul><button data-key="5">delete5</button>
+        <li data-key="1">todo-1 <button data-key="1">delete</button></li>
+        <li data-key="2">todo-2 <button data-key="2">delete</button></li>
+        <li data-key="3">todo-3 <button data-key="3">delete</button></li>
+        <li data-key="4">todo-4 </li>
+        <button data-key="10">delete10</button>
+        <li data-key="5">todo-5 </li>
+        <li data-key="6">todo-6 <button data-key="6">delete</button></li>
+        <li data-key="7">todo-7 </li>
+        <li data-key="8">todo-8 <button data-key="8">delete</button></li>
+        <li data-key="9">todo-9 </li>
+        <li data-key="10">todo-10 </li><button data-key="9">delete9</button>
+    </ul><button data-key="4">delete4</button>
+    <script src="main.js"></script>
+</body>
+
+</html> -->

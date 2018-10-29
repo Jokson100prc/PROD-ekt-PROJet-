@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Canvas - Ping Pong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        canvas {
+            border: 2px dashed #ca824f;
+            color: #875634;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas></canvas>
+    <script>
+        // table
+        const canv = document.querySelector('canvas');
+        canv.width = 1000;
+        canv.height = 500;
+        const cw = canv.width;
+        const ch = canv.height;
+        const ctx = canv.getContext('2d');
+        // Ball
+        const bS = 20;
+        let bX = cw / 2 - bS / 2;
+        let bY = ch / 2 - bS / 2;
+        let ballSpeedX = 1;
+        let ballSpeedY = 1;
+        ballSpeedX = 3;
+        ballSpeedY = 2;
+
+        // Paddles
+        const ph = 100;
+        const pw = 20;
+        const ppX = 70;
+        let ppY = ch / 2 - ph / 2;
+        const paX = 910;
+        let paY = ch / 2 - ph / 2;
+        // centerLine
+        const cLw = 6;
+        const cLh = 16;
+        const cLX = cw / 2 - cLw / 2;
+
+        function table() {
+            ctx.fillStyle = "#362316";
+            ctx.fillRect(0, 0, cw, ch);
+        }
+
+        function ball() {
+            ctx.fillStyle = "#fac198"
+            ctx.fillRect(bX, bY, bS, bS);
+
+            bX += ballSpeedX;
+            bY += ballSpeedY;
+            if (bY <= 0 || bY >= ch - bS) {
+                ballSpeedY = -ballSpeedY
+            }
+            if (bX <= 0 || bX >= cw - bS) {
+                ballSpeedX = -ballSpeedX
+            }
+        }
+
+        function player() {
+            ctx.fillStyle = "#478734"
+            ctx.fillRect(ppX, ppY, pw, ph);
+        }
+
+        function ai() {
+            ctx.fillStyle = "#763487"
+            ctx.fillRect(paX, paY, pw, ph);
+        }
+
+        function centerLine() {
+            for (cLY = 8; cLY < 500; cLY += 26) {
+                ctx.fillStyle = "#c0ad9f";
+                ctx.fillRect(cLX, cLY, cLw, cLh)
+            }
+        }
+
+        function playerPaddlePosition(e) {
+            const EcliY = e.clientY;
+            const canvOfsTop = canv.offsetTop;
+            ppY = EcliY - canvOfsTop - ph / 2;
+            if (ppY <= 0) ppY = 0;
+            if (ppY >= ch - ph) ppY = ch - ph;
+        }
+
+        let numberOfSpeed = 0;
+
+        function speedUp() {
+            numberOfSpeed++;
+            if (numberOfSpeed == 100) {
+                clearInterval(setSpeed)
+            };
+            if (ballSpeedX > 0) {
+                ballSpeedX++
+            }
+            if (ballSpeedX < 0) {
+                ballSpeedX--
+            }
+            if (ballSpeedY > 0) {
+                ballSpeedY += .5
+            }
+            if (ballSpeedY < 0) {
+                ballSpeedY -= .5
+            }
+        }
+        const setSpeed = setInterval(speedUp, 3000)
+
+        function AiSuperGambler() {
+            const midPAY = paY + ph / 2;
+            const midBY = bY + bS / 2;
+            // const midBX = bX + bS / 2;
+            // console.log(bX);
+            if (midPAY - midBY >= 0) {
+                if (bX > 300) {
+                    paY -= .5;
+                    // console.log('-.5');
+                }
+
+                if (bX > 600) {
+                    paY -= 3;
+                    // console.log('-3');
+                    paY -= 5;
+                    if (bX > 800) {
+                        // console.log('-5');
+                    }
+                }
+            }
+            if (midPAY - midBY <= 0) {
+
+                if (bX > 300) {
+                    paY += .5;
+                    // console.log('.5');
+                }
+                if (bX > 600) {
+                    paY += 3;
+                    // console.log('3');
+                }
+                if (bX > 800) {
+                    paY += 5;
+                    // console.log('5');
+                }
+            }
+        }
+
+        function GameMoves() {
+            table();
+            centerLine()
+            ball();
+            player();
+            ai();
+            canv.addEventListener('mousemove', playerPaddlePosition);
+            AiSuperGambler();
+        }
+        setInterval(GameMoves, 50);
+
+        // function stopGame() {
+        //     console.log("object");
+        //     return
+        // }
+        // canv.addEventListener('click', stopGame)
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+<!--  pierwsze kroki sztucznej inteligencji
+ 
+    if (bX > 300) {
+                if (midPAY - midBY >= 0) {
+                    paY -= 2
+                }
+            }
+            if (bX > 600) {
+                if (midPAY - midBY >= 0) {
+                    paY -= .5
+                }
+            }
+            if (bX > 300) 
+                if (midPAY - midBY <= 0) {
+                    paY += 2
+                }
+            }
+            if (bX < 600) {
+                if (midPAY - midBY <= 0) {
+                    paY -= .5
+                }
+            } -->
+
+<!-- druga wersja AI 
+            
+            if (bX > 300) {
+                if (midPAY - midBY >= 0) {
+                    paY -= .5;
+                    console.log('-.5');
+                }
+            }
+            if (bX > 600) {
+                if (midPAY - midBY >= 0) {
+                    paY -= 3;
+                    console.log('-3');
+                }
+            }
+            if (bX > 800) {
+                if (midPAY - midBY <= 0) {
+                    paY -= 5;
+                    console.log('-5');
+                }
+            }
+            if (bX > 300) {
+                if (midPAY - midBY <= 0) {
+                    paY += .5;
+                    console.log('.5');
+                }
+            }
+            if (bX > 600) {
+                if (midPAY - midBY <= 0) {
+                    paY += 3;
+
+                    console.log('3');
+                }
+            }
+            if (bX > 800) {
+                if (midPAY - midBY <= 0) {
+                    paY += 5;
+                    console.log('5');
+                }
+            }
+            -->
+
+
+<!--  trzecia wersja AI
+            if (midPAY - midBY >= 0) {
+                if (bX > 300) {
+                    paY -= .5;
+                    console.log('-.5');
+                }
+
+                if (bX > 600) {
+                    paY -= 3; console.log('-3');
+                   
+                    paY -= 5;
+                    if (bX > 800) {
+
+                        console.log('-5');
+                    }
+                }
+            }
+            if (midPAY - midBY <= 0) {
+
+                if (bX > 300) {
+                    paY += .5;console.log('.5');
+                  
+                }
+                if (bX > 600) {
+                    paY += 3;console.log('3');
+                   
+                }
+                if (bX > 800) {
+                    paY += 5;console.log('5');
+                   
+                }
+            } 
+            -->
