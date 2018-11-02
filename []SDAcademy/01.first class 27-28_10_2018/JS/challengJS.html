@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Challenge1</title>
+</head>
+
+<body>
+    <script>
+        //split, sort i join
+        const word = "fizjoterapia";
+
+        const AlphabetSoup = (str) => {
+
+            str = str.split("").sort().join('');
+            console.log(str);
+
+        }
+
+        AlphabetSoup(word)
+
+
+
+        // 1dot + pentagonal dots, and next circles of pentagonal dots;
+        const PentagonalNumber = (num) => {
+            let y = -1;
+            for (i = 1; i <= num; i++) {
+                y++
+                // console.log(y);
+            }
+            return function () {
+                const result = (y * (num / 2 * 5)) + 1;
+                const div = document.createElement('div');
+                div.style.fontSize = "36px";
+                document.body.appendChild(div).textContent = result;
+                console.log((y * (num / 2 * 5)) + 1);
+            }
+        }
+        const cos = PentagonalNumber(7);
+        cos()
+
+
+        //convert temperatures: celsius and fahrenheit;
+        const convertFahrCelcDegrees = (degC, degF) => {
+            let C;
+            let F;
+            C = (5 * (degF - 32)) / 9;
+            F = (9 * degC + (32 * 5)) / 5;
+            console.log(`${degC} Celsius degrees is ${F} Fahrenheit degrees`);
+            console.log(`${degF} Fahrenheit degrees is ${C} Celsius degrees`);
+        }
+        convertFahrCelcDegrees(100, 212)
+    </script>
+</body>
+
+</html>

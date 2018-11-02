@@ -40,3 +40,49 @@ console.log(firstB);
 
 const schoolTeachers = SchoolClass.addSchoolTeacher("Eleonor Fox", "Ivan MacClay")
 console.log(schoolTeachers);
+
+
+
+
+// extend super 
+class Animal {
+    constructor(age, name) {
+        this.age = age;
+        this.name = name;
+    }
+    breathing() {
+        console.log('The Animal is breathing');
+    }
+}
+
+const frog = new Animal(2, 'Frog');
+console.log(frog);
+
+
+
+
+class Mammal extends Animal {
+    constructor(age, name, hairs) {
+        super(age, name)
+        this.hairs = hairs;
+    }
+    milkFeeding() {
+        console.log('The Mammal eat milk his mother');
+    }
+}
+
+const hamster = new Mammal(1, 'Hamster', 'dark brown');
+console.log(hamster);
+
+hamster.breathing()
+
+
+
+
+class Human extends Mammal {
+    //inside could be nothin...
+}
+
+const simpleton = new Human(34, "Bob", "dark blond/grey")
+console.log(simpleton);
+simpleton.breathing();
