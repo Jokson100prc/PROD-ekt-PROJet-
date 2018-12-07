@@ -1,11 +1,11 @@
-import java.util.Arrays;
-import java.util.Scanner;
-import java.util.SortedMap;
+//import java.util.Arrays;
+//import java.util.Scanner;
+//import java.util.SortedMap;
 
-public class FirstExercises {
-    public static void main(String[] args) {
+//public class FirstExercises {
+//    public static void main(String[] args) {
 //        exercise12();
-        exercise13();
+//        exercise13();
 
 //       1. Przygotuj program, który pobierze od użytkownika 2 liczby oraz wyświetli wynik
 //        podstawowych działań matematycznych (dodawania, odejmowania, dzielenia,
@@ -149,9 +149,9 @@ public class FirstExercises {
 //
 //
 //        System.out.print("\n");
+//}
 
 
-}
 
 
 
@@ -183,15 +183,31 @@ public class FirstExercises {
 //        wpisanie słowa koniec
 
 
+                // 1. możliwość dodania do systemu cyfr przez użytkownika
+                // 2. możliwość dodania do systemu stringa "koniec" przez użytkownika
+                // 3. wprowadzanie kolejnych liczb do [tablicy]
+                     // 3.1 opcjonalnie wyswietlenie alertu jeśli wpisana wartość nie będzie liczbą naturalną
+                // 4. sumowanie liczb z tablicy
+                // 5. zakończenie sumowania przy zaobserwowanym stringu "koniec"
+                // 6. podzielenie sumy liczb przez ilość wprowadzonych liczb = wynik
+                // 7. wyświetlenie wiadomości z wynikiem
 
-    private static void exercise13() {
 
-        Scanner scanner= new Scanner(System.in);
-        System.out.print("Kolejno zadaj liczby z których chcesz uzyskać średnią,\na następnie wpisz \"koniec\": ");
-
-
-
-
-
-    }
-}
+//    private static void exercise13() {
+//
+//
+//        Scanner scanner = new Scanner(System.in);
+//        String theEnd = scanner.next();
+//        int number = scanner.nextInt();
+//
+//
+//        System.out.print("Kolejno zadaj liczby z których chcesz uzyskać średnią,\na następnie wpisz \"koniec\": ");
+//
+//        for (int i = 0; i < ; i++) {
+//
+//        }
+//
+//        if (theEnd == "koniec"){
+//
+//    }
+//}
