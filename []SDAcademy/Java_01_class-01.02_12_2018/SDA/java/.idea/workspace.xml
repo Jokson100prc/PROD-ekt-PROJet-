@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="980d2d67-62a5-4bc5-8843-18a58a693f81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/string/PatternDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/string/RegExpDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/string/ReplaceDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/string/StringBuilderDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/string/StringDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/time/LocalDateDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/time/LocalDateTimeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/time/LocalTimeDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/time/PeriodDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FirstExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FirstExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/car/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/car/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/shape/CreateShape.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/shape/CreateShape.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/string/ReplaceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/string/ReplaceDemo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -92,12 +80,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
-          <entry key="java" value="16042" />
+          <entry key="java" value="16599" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="16042" />
+          <entry key="JAVA" value="16599" />
           <entry key="PLAIN_TEXT" value="8" />
         </counts>
       </usages-collector>
@@ -120,8 +108,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/string/ReplaceDemo.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            <state relative-caret-position="265">
+              <caret line="25" column="75" lean-forward="true" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -180,6 +171,7 @@
         <option value="$PROJECT_DIR$/src/main/java/string/StringBuilderDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/string/RegExpDemo.java" />
         <option value="$PROJECT_DIR$/src/main/java/string/PatternDemo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/string/ReplaceDemo.java" />
       </list>
     </option>
   </component>
@@ -268,7 +260,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544366870492" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544368814754" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../.." />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -293,7 +285,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.PatternDemo">
+  <component name="RunManager" selected="Application.ReplaceDemo">
     <configuration name="PatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="string.PatternDemo" />
       <module name="java" />
@@ -307,12 +299,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PeriodDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="time.PeriodDemo" />
+    <configuration name="RegExpDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.RegExpDemo" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="time.*" />
+          <option name="PATTERN" value="string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -320,8 +312,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegExpDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.RegExpDemo" />
+    <configuration name="ReplaceDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.ReplaceDemo" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
@@ -360,19 +352,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PeriodDemo" />
       <item itemvalue="Application.StringDemo" />
       <item itemvalue="Application.StringBuilderDemo" />
       <item itemvalue="Application.RegExpDemo" />
       <item itemvalue="Application.PatternDemo" />
+      <item itemvalue="Application.ReplaceDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ReplaceDemo" />
         <item itemvalue="Application.PatternDemo" />
         <item itemvalue="Application.RegExpDemo" />
         <item itemvalue="Application.StringBuilderDemo" />
         <item itemvalue="Application.StringDemo" />
-        <item itemvalue="Application.PeriodDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -400,8 +392,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25100672" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25100672" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -411,7 +404,7 @@
       <window_info id="Learn" order="7" weight="0.3295302" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32907802" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -736,8 +729,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/string/ReplaceDemo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        <state relative-caret-position="265">
+          <caret line="25" column="75" lean-forward="true" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
