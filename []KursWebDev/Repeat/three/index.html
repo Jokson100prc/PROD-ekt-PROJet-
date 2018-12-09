@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hero Object from input</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>&nbsp; &nbsp; Hero &nbsp; &nbsp;</legend>
+
+        <div class="form">
+            <div class="name">
+                <div class="first-name">
+                    <label>First Name<input class="input" id="first-name" type="text" name="first_name" placeholder="put name"
+                            required></label>
+                </div>
+                <div class="last-name">
+                    <label>Last Name<input class="input" id="last-name" type="text" name="first_name" placeholder="put last name"
+                            required></label>
+                </div>
+            </div>
+
+            <div class="gender">
+                <label>male<input class="input" type="radio" name="gender" class="gender"></label>
+                <label>female<input class="input" type="radio" name="gender" class="gender"></label>
+                <label>who knows...<input class="input" type="radio" name="gender" class="gender"></label>
+            </div>
+        </div>
+
+    </fieldset>
+
+    <button type="button" id="sendForm">Show your Hero to the World</button>
+
+    <script>
+        const btn = document.getElementById("sendForm");
+
+        const fName = document.getElementById('first-name');
+        const lName = document.getElementById('last-name');
+        const genders = document.querySelectorAll("gender");
+        const testArrayObject = [];
+
+
+        btn.addEventListener("click", function () {
+
+            const gend = genders.forEach(gen => gen.this.value);
+            testArrayObject.push({
+                fname: fName.value,
+                lname: lName.value,
+                gender: gend,
+            });
+
+            console.log(testArrayObject);
+        });
+    </script>
+</body>
+
+</html>
