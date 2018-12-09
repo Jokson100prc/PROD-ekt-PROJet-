@@ -1,10 +1,10 @@
 //import java.util.Arrays;
 //import java.util.Scanner;
 //import java.util.SortedMap;
-
+//
 //public class FirstExercises {
 //    public static void main(String[] args) {
-//        exercise12();
+////        exercise12();
 //        exercise13();
 
 //       1. Przygotuj program, który pobierze od użytkownika 2 liczby oraz wyświetli wynik
@@ -25,15 +25,15 @@
 
 
 //       2. Zadeklaruj i zainicjalizuj 5 elementową tablicę przechowującą łańcuchy znaków
-//                (String). Dodaj do każdego elementu tablicy jedno dowolne imię a następnie wyświetl
+//                (StringDemo). Dodaj do każdego elementu tablicy jedno dowolne imię a następnie wyświetl
 //        kolejno wszystkie imiona z tablicy.
 
-//        String[] string = new String[] {"Wesemir","Dobrawa","Mirmił","Boromir","Jagna"};
+//        StringDemo[] string = new StringDemo[] {"Wesemir","Dobrawa","Mirmił","Boromir","Jagna"};
 //        for (int i = 0; i < string.length; i++) {
 //            System.out.println(string[i]);
 //        }
 //
-//        String[] string2 = new String[5];
+//        StringDemo[] string2 = new StringDemo[5];
 //        string2[0]= "Bianka";
 //        string2[1]= "Radomir";
 //        string2[2]= "Lubawa";
@@ -194,20 +194,22 @@
 
 
 //    private static void exercise13() {
-//
-//
+
+
 //        Scanner scanner = new Scanner(System.in);
 //        String theEnd = scanner.next();
 //        int number = scanner.nextInt();
+//        int[] nubers = new int[200];
+//
 //
 //
 //        System.out.print("Kolejno zadaj liczby z których chcesz uzyskać średnią,\na następnie wpisz \"koniec\": ");
 //
 //        for (int i = 0; i < ; i++) {
-//
+//          number
 //        }
 //
-//        if (theEnd == "koniec"){
-//
+//        if (theEnd == "koniec") {
+//        }
 //    }
 //}

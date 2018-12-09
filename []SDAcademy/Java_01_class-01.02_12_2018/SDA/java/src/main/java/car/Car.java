@@ -2,7 +2,7 @@ package car;
 
 public class Car {
 
-//    final private String carId;
+//    final private StringDemo carId;
 //    final private int power;
 //    final private double capacityFuel;
 
@@ -11,7 +11,7 @@ public class Car {
     public final int power;
     public final double capacityFuel;
     private double levelFuel;
-//    public String carId;
+//    public StringDemo carId;
 //    public int power;
 
 //    Car(){
@@ -40,7 +40,7 @@ public class Car {
     }
 
 
-//    public String getCarId(){
+//    public StringDemo getCarId(){
 //        return carId;
 //    }
 //
