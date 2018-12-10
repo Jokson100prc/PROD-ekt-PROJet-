@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const clicker = (start = 0) => {
+
+            let click = start;
+            const p = document.createElement('p');
+            document.body.appendChild(p).textContent = `Clicks number is ${start}`;
+
+            return clojure = () => {
+                click++;
+                p.textContent = `Clicks number is ${click}`;
+            }
+        }
+
+        const voice = clicker();
+        document.addEventListener("click", voice);
+
+
+        function names(param1 = "", param2) {
+            let name = param1;
+            let age = param2;
+
+            function grall() {
+
+                const p = document.createElement('p');
+                document.body.appendChild(p).textContent =
+                    `Witamy Cię ${name}, ${age >= 30 ? 'Witamy na pokładzie!' : 'Możemy zaproponować nowe rozwiązanie.'}`
+
+                console.log(
+                    `Witamy Cię ${name}, ${age >= 30 ? 'Witamy na pokładzie!' : 'Możemy zaproponować nowe rozwiązanie.'}`
+                );
+            }
+            return grall
+        }
+
+        const marry = names("Marry", 33);
+        const dave = names("Dave", 22);
+
+        marry();
+        dave();
+
+
+
+        const span = document.createElement("span");
+        document.body.appendChild(span);
+        let second = 0;
+        span.textContent = second;
+        const seconds = () => {
+            span.textContent = second++;
+        }
+
+        setInterval(seconds, 1000);
+
+
+
+
+        const names1 = ["Helena", "Jagoda", "Eryk", "Szymon"];
+
+        const names2 = ["Aleksandra", "Daria", "Bernard", "Jan"];
+
+        const allNames = names1.concat(names2);
+        console.log(allNames);
+
+
+
+        const cars = ["Mercedes", "Jaguar", "Volvo", "Subaru"];
+
+        const cars2 = ["Audi", "Daihatsu", "Bentley", "Jeep"];
+
+        const allCars = [...cars, ...cars2];
+        console.log(allCars);
+
+
+
+        //findIndex() gives first true index or -1 if doesn't find any
+        //filter() gives every tru element to new array;
+        const products = [{
+                product: "carrots",
+                weight: 125,
+                type: "vege"
+            },
+            {
+                product: "gingers",
+                weight: 15,
+                type: "vege"
+            },
+            {
+                product: "mashrums",
+                weight: 100,
+                type: "vege"
+            },
+            {
+                product: "rice",
+                weight: 250,
+                type: "vege"
+            },
+            {
+                product: "ham",
+                weigh: 150,
+                type: "meat"
+            },
+            {
+                product: "water",
+                weight: 350,
+                type: "water"
+            },
+        ];
+
+        const lookingForVege = products.findIndex(vege => vege.type != "meat");
+        console.log(lookingForVege);
+
+        const vegeSoup = products.filter(vege => vege.type != "meat");
+        console.log(vegeSoup);
+
+
+
+
+        class Stuff {
+            constructor(name) {
+                this.name = name;
+            }
+
+            showName() {
+                console.log(this.name);
+            }
+        }
+
+        const bow = new Stuff("bow");
+        bow.showName();
+
+
+        class HomeStuff extends Stuff {
+            constructor(name = "", size = Number) {
+                super(name);
+                this.size = size;
+            }
+
+            showParameters() {
+                console.log(this.name + " " + this.size);
+            }
+        }
+
+        const radio = new HomeStuff("radio", 32);
+        radio.showParameters();
+    </script>
+
+</body>
+
+</html>

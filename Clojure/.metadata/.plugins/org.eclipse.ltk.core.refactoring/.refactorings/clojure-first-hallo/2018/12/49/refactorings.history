@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;clojure_first_hallo&apos; to &apos;clojure_first_hello&apos;&#x0D;&#x0A;- Original project: &apos;clojure-first-hallo&apos;&#x0D;&#x0A;- Original element: &apos;clojure-first-hallo/src/clojure_first_hallo&apos;&#x0D;&#x0A;- Renamed element: &apos;clojure-first-hallo/src/clojure_first_hello&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;clojure_first_hallo&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;clojure_first_hallo" name="clojure_first_hello" qualified="false" references="true" stamp="1544390167142" textual="false" version="1.0"/>
+</session>
