@@ -1,11 +1,11 @@
-//import java.util.Arrays;
-//import java.util.Scanner;
-//import java.util.SortedMap;
-//
-//public class FirstExercises {
-//    public static void main(String[] args) {
-////        exercise12();
-//        exercise13();
+import java.util.Arrays;
+import java.util.Scanner;
+import java.util.SortedMap;
+
+public class FirstExercises {
+    public static void main(String[] args) {
+//        exercise12();
+        exercise13();
 
 //       1. Przygotuj program, który pobierze od użytkownika 2 liczby oraz wyświetli wynik
 //        podstawowych działań matematycznych (dodawania, odejmowania, dzielenia,
@@ -137,6 +137,10 @@
 
 
 
+
+
+
+
 //    11.      Przygotuj program, który oblicza średnią arytmetyczną
 //     2 podanych liczb i wyświetla ją na ekranie.
 
@@ -193,23 +197,14 @@
                 // 7. wyświetlenie wiadomości z wynikiem
 
 
-//    private static void exercise13() {
+    private static void exercise13() {
 
 
-//        Scanner scanner = new Scanner(System.in);
-//        String theEnd = scanner.next();
-//        int number = scanner.nextInt();
-//        int[] nubers = new int[200];
-//
-//
-//
-//        System.out.print("Kolejno zadaj liczby z których chcesz uzyskać średnią,\na następnie wpisz \"koniec\": ");
-//
-//        for (int i = 0; i < ; i++) {
-//          number
-//        }
-//
-//        if (theEnd == "koniec") {
-//        }
-//    }
-//}
+      final String KONIEC = "koniec";
+
+
+      Scanner scanner = new Scanner(System.in);
+      String num = 
+    }
+  }
+}

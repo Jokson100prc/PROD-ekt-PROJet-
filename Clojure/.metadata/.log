@@ -470,3 +470,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY ccw.core 1 0 2018-12-10 18:22:47.452
 !MESSAGE Loaded User Plugins
+
+!ENTRY ccw.core 1 0 2018-12-10 19:53:52.580
+!MESSAGE Stopping ccw nREPL server...
