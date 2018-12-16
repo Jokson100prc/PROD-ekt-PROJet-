@@ -3,7 +3,8 @@ package RegularExpressionsExercises;
 
 public class regularExpressionsExercises {
   public static void main(String[] args) {
-
+    CheckNumberOddIven.useBaseConsole();
+//    CheckNumberOddIven.getTextFromConsole();
 
 
   }
