@@ -13,7 +13,7 @@ public class ReverceArray {
 
     }
 
-    String arrRevStringPattern = Exercises.printArray2(arrRevert);
+    String arrRevStringPattern = PrintArray2.printArray2(arrRevert);
     System.out.println(arrRevStringPattern);
   }
 }

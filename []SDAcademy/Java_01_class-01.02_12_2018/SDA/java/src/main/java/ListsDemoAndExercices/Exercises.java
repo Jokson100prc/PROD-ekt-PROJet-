@@ -33,7 +33,7 @@ public class Exercises {
     // 6.
     ReverceArray.reverse(myArr);
 
-    // 7. 
+    // 7.
     // ...
   }
 
