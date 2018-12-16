@@ -1,3 +1,5 @@
+package Demos;
+
 import java.util.Scanner;
 
 public class ConditionsDemo {

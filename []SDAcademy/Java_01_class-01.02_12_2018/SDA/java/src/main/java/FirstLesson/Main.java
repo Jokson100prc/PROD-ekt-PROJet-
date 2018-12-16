@@ -1,4 +1,6 @@
-import com.sun.org.apache.xpath.internal.functions.FuncSubstring;
+package FirstLesson;
+
+import FirstLesson.ConsoleDisplay;
 
 import java.util.Scanner;
 

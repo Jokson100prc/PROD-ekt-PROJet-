@@ -1,3 +1,5 @@
+package FirstLesson;
+
 import java.util.Scanner;
 
 public class ConsoleCalculator {

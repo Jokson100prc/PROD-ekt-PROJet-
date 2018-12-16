@@ -1,3 +1,5 @@
+package Demos;
+
 public class LoopDemo {
     public static void main(String[] args) throws InterruptedException{
     forLoop();

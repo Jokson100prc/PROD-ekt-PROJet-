@@ -1,17 +1,25 @@
+package FirstLesson;
+
 import java.util.Arrays;
 import java.util.Scanner;
 import java.util.SortedMap;
 
 public class FirstExercises {
+
     public static void main(String[] args) {
-//        exercise12();
-        exercise13();
+
+      Scanner scanner = new Scanner(System.in);
+
+//              exercise12();
+      exercise13();
+
+
+
 
 //       1. Przygotuj program, który pobierze od użytkownika 2 liczby oraz wyświetli wynik
 //        podstawowych działań matematycznych (dodawania, odejmowania, dzielenia,
 //                mnożenia)
 
-//        Scanner scanner = new Scanner(System.in);
 //
 //        System.out.print("Podaj pierwszą dowolną liczbę naturalną: ");
 //        int a = scanner.nextInt();
@@ -127,7 +135,7 @@ public class FirstExercises {
 //            °F = (°C × 1.8) + 32;
 //            °C = (°F − 32) / 1.8;
 
-//        System.out.print("Podaj temperature °C: ");
+//        System.out.print("Podaj temperaturę °C: ");
 //        float celc = scanner.nextInt();
 //
 //        System.out.print(celc + " °C to: " + ((celc * 1.8) + 32) + "°F");
@@ -136,6 +144,32 @@ public class FirstExercises {
 //        System.out.print("\n");
 
 
+
+//10. Dodaj do poprzedniego zadania możliwość wyboru czy chcesz wykonać konwersję  oC=> oF czy oF => oC
+//            °F = (°C × 1.8) + 32;
+//            °C = (°F − 32) / 1.8;
+
+
+//
+//      System.out.print("Program konwertuje stopnie Celcjusza do Fahrenheita i odwrotnie.\n" +
+//              "Podaj jednostki z których chcesz konwertować, c dla Celcjusza lub f dla Fahrenheita: ");
+//      String degrees = scanner.next();
+//
+//        System.out.print("Podaj temperaturę: ");
+//        float degr = scanner.nextInt();
+//
+//      if (degrees.equals("c")){
+//        System.out.println(degr + " °C to: " + ((degr * 1.8) + 32) + "°F");
+//
+//      }else if (degrees.equals("C")){
+//        System.out.println(degr + " °C to: " + ((degr * 1.8) + 32) + "°F");
+//
+//      }else if (degrees.equals("f")){
+//        System.out.println(degr + " °F to: " + ((degr - 32) / 1.8) + "°C");
+//
+//      }else if (degrees.equals("F")){
+//        System.out.println(degr + " °F to: " + ((degr - 32) / 1.8) + "°C");
+//      }
 
 
 
@@ -156,30 +190,30 @@ public class FirstExercises {
 //}
 
 
-
+    }
 
 
 //      12.    Zmodyfikuj program z poprzedniego zadania, tak aby poprosił użytkownika o podanie
 //      ilości liczb jakie chce wprowadzić do obliczenia średniej arytmetycznej.
 
-//    private static void exercise12() {
-//
-//Scanner scanner= new Scanner(System.in);
-//        System.out.print("Ile podasz liczb? (max5): ");
-//        int qty = scanner.nextInt()+1;
-//        if (qty <= 6) {
-//            int[] num = new int[qty];
-//            for (int i = 1; i < qty; i++) {
-//                System.out.print("Podaj " + i + " liczbę: ");
-//                num[i] = scanner.nextInt();
-//            }
-//
-//            float sumNr = Arrays.stream(num).sum();
-//            System.out.println("Średnia arytmetyczna tych liczb to: " + (sumNr/(qty-1)));
-//        } else System.out.println("podałeś niewłąściwą ilość");
-//    }
 
 
+//  private static void exercise12() {
+//
+//    Scanner scanner= new Scanner(System.in);
+//    System.out.print("Ile podasz liczb? (max5): ");
+//    int qty = scanner.nextInt()+1;
+//    if (qty <= 6) {
+//      int[] num = new int[qty];
+//      for (int i = 1; i < qty; i++) {
+//        System.out.print("Podaj " + i + " liczbę: ");
+//        num[i] = scanner.nextInt();
+//      }
+//
+//      float sumNr = Arrays.stream(num).sum();
+//      System.out.println("Średnia arytmetyczna tych liczb to: " + (sumNr/(qty-1)));
+//    } else System.out.println("podałeś niewłąściwą ilość");
+//  }
 
 
 //     13.   Zmodyfikuj program z poprzedniego zadania, tak aby użytkownik mógł wprowadzić
@@ -187,24 +221,36 @@ public class FirstExercises {
 //        wpisanie słowa koniec
 
 
-                // 1. możliwość dodania do systemu cyfr przez użytkownika
-                // 2. możliwość dodania do systemu stringa "koniec" przez użytkownika
-                // 3. wprowadzanie kolejnych liczb do [tablicy]
-                     // 3.1 opcjonalnie wyswietlenie alertu jeśli wpisana wartość nie będzie liczbą naturalną
-                // 4. sumowanie liczb z tablicy
-                // 5. zakończenie sumowania przy zaobserwowanym stringu "koniec"
-                // 6. podzielenie sumy liczb przez ilość wprowadzonych liczb = wynik
-                // 7. wyświetlenie wiadomości z wynikiem
+                // 1. możliwość dodania do systemu cyfr (w formie stringa)oraz "koniec"  przez użytkownika
+                // 2. Parsownie  stringa do integer
+                // 3. sumowanie liczb
+                // 4. zakończenie sumowania przy zaobserwowanym stringu "koniec"
+                // 5. podzielenie sumy liczb przez ilość wprowadzonych liczb = wynik
+                // 6. wyświetlenie wiadomości z wynikiem
 
 
-    private static void exercise13() {
 
 
-      final String KONIEC = "koniec";
+  private static void exercise13() {
 
+Scanner scanner= new Scanner(System.in);
+    System.out.print("Wprowadzaj po kolei po jednej dowolnej liczbie, a następnie zakończ wpisując \"koniec\": ");
 
-      Scanner scanner = new Scanner(System.in);
-      String num = 
-    }
+    String string = scanner.next();
+
+//String[] both = Stream.concat(Arrays.stream(a), Arrays.stream(b))
+//                      .toArray(String[]::new);
+
+    int qty = scanner.nextInt()+1;
+    if (qty <= 6) {
+      int[] num = new int[qty];
+      for (int i = 1; i < qty; i++) {
+        System.out.print("Podaj " + i + " liczbę: ");
+        num[i] = scanner.nextInt();
+      }
+
+      float sumNr = Arrays.stream(num).sum();
+      System.out.println("Średnia arytmetyczna tych liczb to: " + (sumNr/(qty-1)));
+    } else System.out.println("podałeś niewłąściwą ilość");
   }
 }
