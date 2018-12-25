@@ -7,25 +7,26 @@ public class PatternDemo {
   public static void main(String[] args) {
 
 
-    Pattern pattern = Pattern.compile("\\b\\w+\\b\\s+b.*",Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CHARACTER_CLASS);
+    Pattern pattern = Pattern.compile("\\b\\w+\\b\\s+b.*", Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CHARACTER_CLASS);
     Matcher match = pattern.matcher("może być");
 
     System.out.println(match.matches());
 
-    // grupy () - maksymalnie może być od  grup od 0 do 9
+    // grupy () -  grup może być maksymalnie od 0 do 9
     Pattern code = Pattern.compile("\\d\\d-\\d\\d\\d");
     Matcher codeMatcher = code.matcher("Kod pocztowy: 45-367");
-    if (codeMatcher.find()){
+    if (codeMatcher.find()) {
       System.out.println(codeMatcher.group());
 
 
       code = Pattern.compile(".*:\\s(\\d\\d-\\d\\d\\d)");
       codeMatcher = code.matcher("Kod pocztowy: 37-269");
-      if (codeMatcher.matches()){
+      if (codeMatcher.matches()) {
         System.out.println(codeMatcher.groupCount());
         System.out.println(codeMatcher.group(1));
-    }
-       code = Pattern.compile(".*:\\s(\\d\\d)-(\\d\\d\\d)");;
+      }
+      code = Pattern.compile(".*:\\s(\\d\\d)-(\\d\\d\\d)");
+      ;
       codeMatcher = code.matcher("Kod pocztowy: 37-269");
       if (codeMatcher.matches()) {
         System.out.println(codeMatcher.groupCount());

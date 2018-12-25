@@ -19,7 +19,7 @@ public class RegExpDemo {
 
     //bez uwzględniania wielkości znaków
     // (?i) - ignoruj welkość naków
-    str= "aaaaaBBBBbb";
+    str = "aaaaaBBBBbb";
     System.out.println(str.matches("a*(?i)b*"));
 
     //zbiór znaków [a-z], [afr], [a-zA-Z],
@@ -39,13 +39,13 @@ public class RegExpDemo {
     System.out.println(str.matches("[0-9]{2}-[0-9]{3}"));
 
     //Ssprawdź czy w łańcuchu znajduję się liczba dwucyfrowa, mniejsza od 50
-    str= "64";
+    str = "64";
     System.out.println(str.matches("[1-4]\\d"));
     // \b - granica słowa
     // \B - poza granicą sowa
     // \s - znak biały
     // \w - znak słowa
-    // \W - inny znak niż słowa
+    // \W - inny znak niż znak słowa
 
     //czy drugie słowo zaczyna się literą "b"
     str = "może być";

@@ -9,12 +9,13 @@ public class ReplaceDemo {
     String text = "Programowanie w Java w i o";
     System.out.println(text);
 
-    System.out.println(text.replaceAll("\\b\\w\\b","z"));
+    System.out.println(text.replaceAll("\\b\\w\\b", "z"));
 
     System.out.println(text.replaceAll("\\b\\w{4}\\b", "JAVA"));
 
     text = "Programowanie w Java w i o nie";
-    System.out.println(text.replaceAll("nie","tak"));
+    System.out.println(text.replaceAll("nie", "tak"));
+
 // ? dokładnie jeden dowolny znak
 // odwołanie wsteczne |numer_grupy
     text = "kod kod kod pocztowy";
