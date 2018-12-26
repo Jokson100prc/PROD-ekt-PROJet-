@@ -34,12 +34,12 @@ public class RegExpDemo {
     // \D - dowolny znak który nie jest cyfrą
     System.out.println(str.matches("\\d.*"));
     str = "34-890";
-    System.out.println(str.matches("\\d\\d-d\\d\\d"));
-    System.out.println(str.matches("\\d{2}-d{3}"));
+    System.out.println(str.matches("\\d\\d-\\d\\d\\d"));
+    System.out.println(str.matches("\\d{2}-\\d{3}"));
     System.out.println(str.matches("[0-9]{2}-[0-9]{3}"));
 
     //Ssprawdź czy w łańcuchu znajduję się liczba dwucyfrowa, mniejsza od 50
-    str = "64";
+    str = "49";
     System.out.println(str.matches("[1-4]\\d"));
     // \b - granica słowa
     // \B - poza granicą sowa

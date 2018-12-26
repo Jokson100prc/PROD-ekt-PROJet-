@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="040cb21a-e88e-472b-aedd-1386915f43e4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckCityCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/DatePatternValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StringValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/SerialNumberValidatin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StatisticFromString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/VATInvoiceValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/BaseConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/BaseConsole.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckNumberOddIven.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckNumberOddIven.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/DatePatternValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/DatePatternValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/regularExpressionsExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/regularExpressionsExercises.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/string/PatternDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/string/PatternDemo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/string/RegExpDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/string/RegExpDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/string/ReplaceDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/string/ReplaceDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDA/java/src/main/java/string/StringBuilderDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/SDA/java/src/main/java/string/StringBuilderDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/BaseConsole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/BaseConsole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/CheckNumberOddIven.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/CheckNumberOddIven.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/StringValidation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/StringValidation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/regularExpressionsExercises.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/RegularExpressionsExercises/regularExpressionsExercises.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/string/PatternDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/string/PatternDemo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/string/ReplaceDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/string/ReplaceDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/string/RegExpDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/string/RegExpDemo.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,8 +26,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/regularExpressionsExercises.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="122">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="26" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -41,8 +35,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/DatePatternValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="520">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StatisticFromString.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-start-column="2" selection-end-line="26" selection-end-column="3" />
+              <folding>
+                <element signature="e#0#1148#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,12 +86,15 @@
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/string/ReplaceDemo.java" />
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/string/StringBuilderDemo.java" />
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/string/PatternDemo.java" />
-        <option value="$PROJECT_DIR$/SDA/java/src/main/java/string/RegExpDemo.java" />
-        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java" />
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckNumberOddIven.java" />
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckCityCode.java" />
-        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StringValidation.java" />
+        <option value="$PROJECT_DIR$/SDA/java/src/main/java/string/RegExpDemo.java" />
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/regularExpressionsExercises.java" />
+        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StatisticFromString.java" />
+        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/VATInvoiceValidation.java" />
+        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StringValidation.java" />
+        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/SerialNumberValidatin.java" />
+        <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java" />
         <option value="$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/DatePatternValidation.java" />
       </list>
     </option>
@@ -178,16 +187,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Demos" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Java_01_class-01.02_12_2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Java_01_class-01.02_12_2018" type="462c0819:PsiDirectoryNode" />
-              <item name="SDA" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="RegularExpressionsExercises" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,7 +209,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545744062035" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545859660300" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -230,19 +229,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.regularExpressionsExercises">
-    <configuration name="PatternDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="string.PatternDemo" />
-      <module name="Java_01_class-01.02_12_2018" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="string.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegExpDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="string.RegExpDemo" />
       <module name="Java_01_class-01.02_12_2018" />
@@ -282,6 +268,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="string.StringDemo" />
+      <module name="Java_01_class-01.02_12_2018" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="regularExpressionsExercises" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="RegularExpressionsExercises.regularExpressionsExercises" />
       <module name="Java_01_class-01.02_12_2018" />
@@ -296,19 +295,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.PatternDemo" />
       <item itemvalue="Application.RegExpDemo" />
-      <item itemvalue="Application.ReplaceDemo" />
-      <item itemvalue="Application.StringBuilderDemo" />
       <item itemvalue="Application.regularExpressionsExercises" />
+      <item itemvalue="Application.StringBuilderDemo" />
+      <item itemvalue="Application.ReplaceDemo" />
+      <item itemvalue="Application.StringDemo" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.regularExpressionsExercises" />
-        <item itemvalue="Application.ReplaceDemo" />
         <item itemvalue="Application.StringBuilderDemo" />
-        <item itemvalue="Application.PatternDemo" />
+        <item itemvalue="Application.StringDemo" />
         <item itemvalue="Application.RegExpDemo" />
+        <item itemvalue="Application.ReplaceDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -330,20 +329,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="33" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.703966" visible="true" weight="0.25637585" />
-      <window_info id="Structure" order="1" sideWeight="0.296034" side_tool="true" visible="true" weight="0.25637585" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.70253164" visible="true" weight="0.25637585" />
+      <window_info id="Structure" order="1" sideWeight="0.29746836" side_tool="true" visible="true" weight="0.25637585" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Learn" order="6" sideWeight="0.4978903" weight="0.3295302" />
       <window_info id="Favorites" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="0" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -554,13 +552,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/StringBuilderDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/ReplaceDemo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -568,31 +559,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/StringDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckNumberOddIven.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
           <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckCityCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="5" column="76" selection-start-line="5" selection-start-column="76" selection-end-line="5" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/RegExpDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
         </state>
       </provider>
     </entry>
@@ -606,31 +576,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java">
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/CheckCityCode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="16" selection-end-column="76" />
+        <state relative-caret-position="189">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="11" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/RegExpDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/StringDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/string/StringBuilderDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StatisticFromString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-start-column="2" selection-end-line="26" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#1148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/VATInvoiceValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/StringValidation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="102">
+          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="21" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/SerialNumberValidatin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/LoginValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="33" column="56" selection-start-line="33" selection-start-column="56" selection-end-line="41" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/regularExpressionsExercises.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        <state relative-caret-position="122">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="26" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SDA/java/src/main/java/RegularExpressionsExercises/DatePatternValidation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="520">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
         </state>
       </provider>
     </entry>

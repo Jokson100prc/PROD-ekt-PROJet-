@@ -31,10 +31,10 @@ public class LoginValidation {
 //// ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***    ***
 
 
-//    String passPattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{3,8}";
+//    String passPattern = "(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,16}";
 //
 ////    String passwd = "aaZZa44@";
-////    System.out.println(passwd.matches(pattern));
+////    System.out.println(passwd.matches(passPattern));
 //
 //    System.out.println("Podaj login z min. 8 znaków, zawierający małą i dużą literę oraz cyfrę:");
 //    String fromConsole = BaseConsole.getTextFromConsole();

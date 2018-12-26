@@ -14,6 +14,18 @@ public class regularExpressionsExercises {
 
     DatePatternValidation.datePatternValidation();
 
+    SerialNumberValidatin.serialNumberValidatin();
+
+    VATInvoiceValidation.vatInvoiceValidation();
+
+
+//    String fromConsole = "Brylant Dynia Agat Cyjan"/*BaseConsole.getTextFromConsole()*/;
+//    String[] words = fromConsole.split(" ");
+//    StatisticFromString.statisticFromString(words);
+//    for (int i = 0; i < fromConsole.length(); i++) {
+//      System.out.println(words[i]);
+//    }
+
   }
 }
 
