@@ -1,15 +1,51 @@
 package ExercisesArray;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
   public static void main(String[] args) {
 
+
+    List<Double> listOfDouble = new ArrayList() {
+    };
+    listOfDouble.add(45.4);
+    listOfDouble.add(7.1);
+    listOfDouble.add(2.);
+    listOfDouble.add(0.998);
+    listOfDouble.add(354.45);
+    listOfDouble.add(11.11);
+    listOfDouble.add(77.25);
+    listOfDouble.add(6.6);
+    listOfDouble.add(.44);
+    listOfDouble.add(537.784);
+
     int[] numbers = new int[10];
 
-    FirstExercise addToArray = new FirstExercise();
-    addToArray.incrementation(numbers);
 
-    FirstExercise addAndProduct = new FirstExercise();
-    addAndProduct.product(numbers);
+//    System.out.println(numbers + " initialized array");
+//
+//    FirstExerciseArray addToArray = new FirstExerciseArray();
+//    addToArray.incrementation(numbers);
+//    System.out.println(addToArray.incrementation(numbers) + " ee.. hmm...");
+//
+//    FirstExerciseArray addAndProduct = new FirstExerciseArray();
+//    addAndProduct.product(numbers);
+//
+//    FirstExerciseArray give = new FirstExerciseArray();
+//    System.out.println( give.giveItBack());
+//
+//    FirstExerciseArray giveMeTheQueen = new FirstExerciseArray();
+//    System.out.println(giveMeTheQueen.givArrayBack() + " QUEEN");
+//
+//    FirstExerciseArray giveMeTheQueen2 = new FirstExerciseArray();
+//    System.out.println(giveMeTheQueen2.givArrayBack2(numbers) + " MainQueen");
+
+//    SecondExerciseArrayList show = new SecondExerciseArrayList();
+//     System.out.println(show.addToArrayList());
+
+ThirdExerciseArrLiDouble display = new ThirdExerciseArrLiDouble();
+display.actionOnDouble(listOfDouble);
   }
 }
 

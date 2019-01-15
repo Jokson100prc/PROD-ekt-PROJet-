@@ -9,28 +9,46 @@ package ExercisesArray;
 //        zapisz go ponownie w tablicy.
 //        e. Wyświetl kolejno elementy tablicy wykorzystując pętlę for.
 //***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ***   ******   ***   ***   ***   ***   ***
-public class FirstExercise {
+public class FirstExerciseArray {
 
-  void incrementation(int[] numbers) {
+  int[] incrementation(int[] nums) {
     int number = 0;
-    for (int i = 0; i < numbers.length; i++) {
+    for (int i = 0; i < nums.length; i++) {
       number++;
-      numbers[i] = number;
+      nums[i] = number;
     }
-    System.out.println(numbers[0]);
-    System.out.println(numbers[9]);
+    System.out.println("first index" + nums[0]);
+    System.out.println("last index" + nums[9]);
+    return nums;
   }
 
-  void product(int[] numbers){
+  void product(int[] numbers) {
     int number = 0;
-    for (int i = 0; i < numbers.length; i++) {
-      number++;
-      number *= 2;
-      numbers[i] = number;
-      System.out.println(numbers[0] + " !!!");
-      System.out.println(numbers[9] + " !!!");
-    }
 
+    for (int i = 0; i < numbers.length; i++) {
+
+      number++;
+      numbers[i] = number;
+      numbers[i] *= 2;
+
+    }
+    System.out.println(numbers[0] + " !!!");
+    System.out.println(numbers[9] + " !!!");
   }
 
+  int giveItBack() {
+    return 5;
+  }
+
+  int[] givArrayBack() {
+
+    int[] arrayQueen = {123, 456, 789};
+    return arrayQueen;
+  }
+
+  int[] givArrayBack2(int[] arr) {
+
+    int[] arrayQueen = arr;
+    return arrayQueen;
+  }
 }
