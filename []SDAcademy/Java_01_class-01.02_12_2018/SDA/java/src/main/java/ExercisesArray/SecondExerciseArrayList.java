@@ -27,7 +27,7 @@ public class SecondExerciseArrayList {
 
     int index2 = id.get(2);
     index2 *= 3;
-    System.out.println("95 multiplication by 3, action on id.get(2): " + index2);
+    System.out.println("95 multiplication by 3, action on id.get(2): "+index2);
     return (ArrayList<Integer>) id;
   }
 }
