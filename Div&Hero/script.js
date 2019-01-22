@@ -41,7 +41,7 @@ window.onload = function (e) {
             },
         },
         getBoost: function (boost, id) {
-            console.log([boost, id]);
+            // console.log([boost, id]);
             const arr = [];
             for (let i = 0; i < boost; i++) {
                 arr.push(id);
@@ -133,10 +133,10 @@ window.onload = function (e) {
         let initCollection = [1, 2, 3, 4];
         let idCollection = [1, 2, 3, 4];
         for (id of initCollection) {
-            console.log(staticObjList.getBoost(staticObjList[id].boost, id));
+            // console.log(staticObjList.getBoost(staticObjList[id].boost, id));
             idCollection = idCollection.concat(staticObjList.getBoost(staticObjList[id].boost, id));
         }
-        console.log(idCollection);
+        // console.log(idCollection);
 
         n = 4;
         let space = "";
