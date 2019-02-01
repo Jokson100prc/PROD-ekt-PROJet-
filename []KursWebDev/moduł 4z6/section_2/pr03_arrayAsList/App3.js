@@ -2,18 +2,18 @@ const data = {
   users: [
     {
       id: 1,
-      name: "Agnes",
+      name: "Harry",
       age: "39"
     },
     {
-      id: 1,
-      name: "Agnes",
-      age: "39"
+      id: 2,
+      name: "Jane",
+      age: "55"
     },
     {
-      id: 1,
-      name: "Agnes",
-      age: "39"
+      id: 3,
+      name: "Marry",
+      age: "319"
     }
   ]
 };
@@ -25,6 +25,7 @@ const Person = ({ user }) => (
     <h3>Id: {user.id}</h3>
   </li>
 );
+
 class PersonsList extends React.Component {
   render() {
     const users = this.props.data.users;
