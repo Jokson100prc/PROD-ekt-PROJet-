@@ -38,13 +38,45 @@ const Person = ({ user }) => (
 );
 
 class PersonsList extends React.Component {
+state={
+  select: "all"
+}
+
+hangleAll=(e, option)=>{
+e.preventDefault();
+  this.setState({
+    select: option
+  })
+}
+
+hangleFem=(e)=>{
+  e.preventDefault();
+  this.setState({
+    select: "female"
+  })
+}
+
+hangleMal=(e)=>{
+  e.preventDefault();
+  this.setState({
+    select: "male"
+  })
+}
+
   render() {
     let users = this.props.data.users;
     users = users.filter(user => user.sex === "male");
 
     const Persons = users.map(user => <Person key={user.id} user={user} />);
 
-    return <>{Persons}</>;
+    return (
+      <>
+        {Persons};
+        <button className="btnAll" type="submit" onClick={this.hangleAll.bind(this, "all")}></button>;
+        <button className="btnFem" type="submit" {this.hangleFem.bind(this, "female")}></button>;
+        <button className="btnMal" type="submit" {this.hangleMal.bind(this, "male")}></button>;
+      </>
+    );
   }
 }
 ReactDOM.render(<PersonsList data={data} />, document.getElementById("root"));
