@@ -1,82 +1,31 @@
-const data = {
-  users: [
-    {
-      id: 1,
-      name: "Harry",
-      age: "21",
-      sex: "male"
-    },
-    {
-      id: 2,
-      name: "Jane",
-      age: "55",
-      sex: "female"
-    },
-    {
-      id: 3,
-      name: "Marry",
-      age: "19",
-      sex: "female"
-    },
-    {
-      id: 4,
-      name: "Francis",
-      age: "36",
-      sex: "male"
-    }
-  ]
-};
+const Li = props => <li>{`fruit of ${props.txtCont}`}</li>;
 
-const Person = ({ user }) => (
-  <ul>
-    <li>
-      <h2>Person name: {user.name}</h2>
-      <h3>Age: {user.age}</h3>
-      <h3>Id: {user.id}</h3>
-    </li>
-  </ul>
-);
-
-class PersonsList extends React.Component {
-state={
-  select: "all"
-}
-
-hangleAll=(e, option)=>{
-e.preventDefault();
-  this.setState({
-    select: option
-  })
-}
-
-hangleFem=(e)=>{
-  e.preventDefault();
-  this.setState({
-    select: "female"
-  })
-}
-
-hangleMal=(e)=>{
-  e.preventDefault();
-  this.setState({
-    select: "male"
-  })
-}
+class ArrayToList extends React.Component {
+  state = {
+    items: ["apple", "strawberry", "orange"]
+  };
 
   render() {
-    let users = this.props.data.users;
-    users = users.filter(user => user.sex === "male");
+    const Lits = this.state.items.map(item => <Li key={item} txtCont={item} />);
 
-    const Persons = users.map(user => <Person key={user.id} user={user} />);
-
-    return (
-      <>
-        {Persons};
-        <button className="btnAll" type="submit" onClick={this.hangleAll.bind(this, "all")}></button>;
-        <button className="btnFem" type="submit" {this.hangleFem.bind(this, "female")}></button>;
-        <button className="btnMal" type="submit" {this.hangleMal.bind(this, "male")}></button>;
-      </>
-    );
+    return <ul>{Lits}</ul>;
   }
 }
-ReactDOM.render(<PersonsList data={data} />, document.getElementById("root"));
+ReactDOM.render(<ArrayToList />, document.getElementById("root"));
+
+// class App extends React.Component {
+//   state = {
+//     items: ["apple", "strawberry", "orange"]
+//   };
+//   render() {
+//     return (
+//       <ul>
+//         {this.state.items.map(item => (
+//           <li key={item}>{item}</li>
+//         ))}
+//       </ul>
+//     );
+//   }
+// }
+
+// ReactDOM.render(<App />, document.getElementById("root"));
