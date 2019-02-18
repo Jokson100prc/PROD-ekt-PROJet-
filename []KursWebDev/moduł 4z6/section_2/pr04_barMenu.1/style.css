@@ -1,0 +1,22 @@
+body {
+    font-family: Consolas, sans-serif;
+    font-size: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 20px 10px;
+    line-height: 160%;
+    cursor: pointer;
+}
+
+li:nth-child(even) {
+    background-color: #ccc;
+}
+
+li:nth-child(odd) {
+    background-color: #eee;
+}
