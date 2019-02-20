@@ -9,11 +9,21 @@ class App extends React.Component {
       { id: 6, name: "pandeiro", value: 30, active: false }
     ]
   };
+
+  handleActive = active => {
+    this.setState = {
+      active: !active
+    };
+  };
+
   render() {
     return (
       <>
         <Header items={this.state.items} />
-        <ListItems />
+        <ListItems
+          onClick={this.handleActive.bind(this)}
+          items={this.state.items}
+        />
       </>
     );
   }
