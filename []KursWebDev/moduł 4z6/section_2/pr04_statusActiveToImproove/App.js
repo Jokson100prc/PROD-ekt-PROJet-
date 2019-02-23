@@ -9,11 +9,31 @@ class App extends React.Component {
       { id: 6, name: "arrow", pts: 111, active: false }
     ]
   };
+
+  activeIsTrue = id => {
+    const storageList = this.state.storageList.map(item => {
+      if (id === item.id) {
+        if (item.pts > 0) {
+          item.active = true;
+        } else {
+          item.active = false;
+        }
+      }
+      return item;
+    });
+    this.setState({
+      storageList
+    });
+  };
+
   render() {
     return (
       <>
         <Header storageList={this.state.storageList} />
-        <Storage storageList={this.state.storageList} />
+        <Storage
+          storageList={this.state.storageList}
+          activeIsTrue={this.activeIsTrue}
+        />
       </>
     );
   }

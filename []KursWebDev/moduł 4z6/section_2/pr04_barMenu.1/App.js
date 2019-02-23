@@ -10,20 +10,24 @@ class App extends React.Component {
     ]
   };
 
-  handleActive = active => {
-    this.setState = {
-      active: !active
-    };
+  handleActive = id => {
+    const items = this.state.items.map(item => {
+      if (id === item.id) {
+        item.active = !item.active;
+      }
+      return item;
+    });
+    this.setState({
+      // items:items it is same to items
+      items
+    });
   };
 
   render() {
     return (
       <>
         <Header items={this.state.items} />
-        <ListItems
-          onClick={this.handleActive.bind(this)}
-          items={this.state.items}
-        />
+        <ListItems handleActive={this.handleActive} items={this.state.items} />
       </>
     );
   }
