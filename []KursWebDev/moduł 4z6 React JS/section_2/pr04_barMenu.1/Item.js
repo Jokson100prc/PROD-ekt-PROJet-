@@ -1,7 +1,7 @@
 const Item = props => {
   const li = (
     <li
-      style={props.active ? { fontWeight: "bold" } : { color: "gray" }}
+      className={props.active ? "enabled" : "disabled"}
       onClick={() => props.handleActive(props.id)}
     >
       {props.name}
@@ -9,3 +9,5 @@ const Item = props => {
   );
   return <>{li}</>;
 };
+
+// style={props.active ? { fontWeight: "bold" } : { color: "gray" }}

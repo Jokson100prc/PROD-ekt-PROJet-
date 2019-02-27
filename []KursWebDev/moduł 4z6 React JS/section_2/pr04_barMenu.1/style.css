@@ -13,6 +13,14 @@ li {
     cursor: pointer;
 }
 
+li.enabled {
+    font-weight: bold;
+}
+
+li.disabled {
+    color: grey;
+}
+
 li:nth-child(even) {
     background-color: #ccc;
 }
