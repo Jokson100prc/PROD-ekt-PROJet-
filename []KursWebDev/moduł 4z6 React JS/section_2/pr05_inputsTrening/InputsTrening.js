@@ -6,28 +6,16 @@ class App extends React.Component {
     howManyTimes: "more"
   };
 
-  handleCityChange = event => {
-    this.setState({
-      city: event.target.value
-    });
-  };
-
-  handleTextChange = e => {
-    this.setState({
-      text: e.target.value
-    });
-  };
-
-  handleLovedChecked = e => {
-    this.setState({
-      isLoved: e.target.checked
-    });
-  };
-
-  handleHowManyTimes = e => {
-    this.setState({
-      howManyTimes: e.target.value
-    });
+  handleChange = e => {
+    if (e.target.type === "checkbox") {
+      this.setState({
+        [e.target.name]: e.target.checked
+      });
+    } else {
+      this.setState({
+        [e.target.name]: e.target.value
+      });
+    }
   };
 
   render() {
@@ -36,8 +24,9 @@ class App extends React.Component {
         <label>
           Insert the city:&nbsp;
           <input
+            name="city"
             value={this.state.city}
-            onChange={this.handleCityChange}
+            onChange={this.handleChange}
             type="text"
           />
         </label>
@@ -46,8 +35,9 @@ class App extends React.Component {
         <label>
           Write some about this city:&nbsp;{" "}
           <input
+            name="text"
             value={this.state.text}
-            onChange={this.handleTextChange}
+            onChange={this.handleChange}
             type="textArea"
           />
         </label>
@@ -56,8 +46,9 @@ class App extends React.Component {
         <label>
           If you love your city? &nbsp;
           <input
+            name="isLoved"
             checked={this.state.isLoved}
-            onChange={this.handleLovedChecked}
+            onChange={this.handleChange}
             type="checkbox"
           />
         </label>
@@ -66,8 +57,9 @@ class App extends React.Component {
         <label>
           How many times you've bin there? &nbsp;
           <select
+            name="howManyTimes"
             value={this.state.howManyTimes}
-            onChange={this.handleHowManyTimes}
+            onChange={this.handleChange}
           >
             <option value="0">0</option>
             <option value="1">1</option>
