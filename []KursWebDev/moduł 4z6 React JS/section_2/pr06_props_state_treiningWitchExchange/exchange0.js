@@ -35,7 +35,7 @@ class App extends React.Component {
     {
       id: 1,
       name: "Czech Crown",
-      ratio: 1.7,
+      ratio: 0.17,
       text: "# Your PLN cash in Czech Crown "
     }
   ];

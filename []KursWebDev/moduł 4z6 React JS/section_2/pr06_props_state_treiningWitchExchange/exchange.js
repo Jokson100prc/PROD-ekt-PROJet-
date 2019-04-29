@@ -1,8 +1,12 @@
 const Cash = props => {
+  const value =
+    ((props.amount / props.ratio) * props.price).toFixed(2) <= 0
+      ? ""
+      : ((props.amount / props.ratio) * props.price).toFixed(2);
   return (
     <p>
       {props.text}
-      {(props.amount / props.ratio).toFixed(2)}{" "}
+      {value}{" "}
     </p>
   );
 };
@@ -68,11 +72,21 @@ class Exchange extends React.Component {
     }
   }
 
+  selectPrice(select) {
+    return this.props.prices[select];
+  }
+
   render() {
     const { amount, product } = this.state;
 
     const rateStatusElement = this.props.currencies.map(c => (
-      <Cash key={c.id} text={c.text} amount={amount} ratio={c.ratio} />
+      <Cash
+        key={c.id}
+        text={c.text}
+        amount={amount}
+        ratio={c.ratio}
+        price={this.selectPrice(product)}
+      />
     ));
     return (
       <>
@@ -89,7 +103,11 @@ class Exchange extends React.Component {
         <br />
 
         <label>
-          <input type="number" value={amount} onChange={this.handleAmount} />
+          <input
+            type="number"
+            value={amount <= 0 ? "" : amount}
+            onChange={this.handleAmount}
+          />
           {this.insertSuffix(this.state.product)}
         </label>
         {rateStatusElement}
